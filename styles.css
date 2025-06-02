@@ -11,6 +11,14 @@ body {
   justify-content: space-evenly;
 }
 
+#welcome {
+  display: table;
+  margin: auto;
+  display: table-cell;
+  vertical-align: middle;
+  padding-top: 25vh;
+}
+
 h1 {
   text-align: center;
 }
