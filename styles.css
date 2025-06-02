@@ -13,14 +13,18 @@ body {
 
 #welcome {
   display: table;
-  margin: auto;
   display: table-cell;
   vertical-align: middle;
   padding-top: 25vh;
+  width: 100vw;
+}
+
+#welcome, header {
+  margin: auto;
 }
 
 header {
   font-size: 2em;
   text-align: center;
-  width: 100%;
+  width: 25%;
 }
