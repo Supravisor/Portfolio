@@ -19,6 +19,7 @@ body {
   padding-top: 25vh;
 }
 
-h1 {
+header {
+  font-size: 2em;
   text-align: center;
 }
