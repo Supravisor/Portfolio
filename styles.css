@@ -3,3 +3,10 @@ body {
   background: DodgerBlue;
   font-family: Arial;
 }
+
+#navbar {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
