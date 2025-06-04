@@ -15,7 +15,6 @@ body {
   display: table;
   display: table-cell;
   vertical-align: middle;
-  padding-top: 25vh;
   width: 100vw;
 }
 
@@ -24,7 +23,5 @@ body {
 }
 
 header {
-  font-size: 2em;
   text-align: center;
-  width: 50%;
 }
