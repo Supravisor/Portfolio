@@ -31,7 +31,7 @@ class Portfolio extends React.Component {
     <Navbar />
 
     <main id="content">
-      <Content display={this.state.display} />
+      <Content />
     </main>
 
   </div>
@@ -47,15 +47,15 @@ class Navbar extends React.Component {
   }
   render() {
     return (
-    <nav>
-      <ul id="navbar">
-        <li>Home</li>
-        <li>About</li>
-        <li>Experience</li>
-        <li>Projects</li>
-        <li>Skills</li>
-      </ul>
-    </nav>
+      <nav>
+        <ul id="navbar">
+          <li>Home</li>
+          <li>About</li>
+          <li>Experience</li>
+          <li>Projects</li>
+          <li>Skills</li>
+        </ul>
+      </nav>
     );
   }
 
@@ -68,7 +68,10 @@ class Content extends React.Component {
     super(props);
   }
   render() {
-    <Home />
+    return (
+      <Home />
+    );
+
   }
 };
     </script>
