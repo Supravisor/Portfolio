@@ -59,6 +59,23 @@ class Navbar extends React.Component {
     </script>
 
     <script type="text/babel">
+class Home extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div id="welcome">
+        <header>
+          <h1>Welcome to my<br />portfolio page</h1>
+        </header>
+      </div>
+    );
+  }
+};
+    </script>
+
+    <script type="text/babel">
       const container = document.getElementById('root');
       const root = ReactDOM.createRoot(container);
       root.render(<Portfolio />);
