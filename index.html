@@ -29,12 +29,16 @@ class Portfolio extends React.Component {
     return (
   <div id="container">
     <Navbar />
+
+    <main id="content">
+      <Content />
+    </main>
+
   </div>
     );
   }
 };
     </script>
-
 
     <script type="text/babel">
 class Navbar extends React.Component {
@@ -43,18 +47,49 @@ class Navbar extends React.Component {
   }
   render() {
     return (
-    <nav>
-      <ul id="navbar">
-        <li>Home</li>
-        <li>About</li>
-        <li>Experience</li>
-        <li>Projects</li>
-        <li>Skills</li>
-      </ul>
-    </nav>
+      <nav>
+        <ul id="navbar">
+          <li>Home</li>
+          <li>About</li>
+          <li>Experience</li>
+          <li>Projects</li>
+          <li>Skills</li>
+        </ul>
+      </nav>
     );
   }
 
+};
+    </script>
+
+    <script type="text/babel">
+class Content extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <Home />
+    );
+
+  }
+};
+    </script>
+
+    <script type="text/babel">
+class Home extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div id="welcome">
+        <header>
+          <h1>Welcome to my<br />portfolio page</h1>
+        </header>
+      </div>
+    );
+  }
 };
     </script>
 
