@@ -28,10 +28,33 @@ class Portfolio extends React.Component {
   render() {
     return (
   <div id="container">
-    {this.state.display}
+    <Navbar />
   </div>
     );
   }
+};
+    </script>
+
+
+    <script type="text/babel">
+class Navbar extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+    <nav>
+      <ul id="navbar">
+        <li>Home</li>
+        <li>About</li>
+        <li>Experience</li>
+        <li>Projects</li>
+        <li>Skills</li>
+      </ul>
+    </nav>
+    );
+  }
+
 };
     </script>
 
