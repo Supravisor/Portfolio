@@ -17,6 +17,24 @@
 
     <div id="root"></div>
 
+    <script type="text/babel">
+class Portfolio extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      display: "Working"
+    }
+  }
+  render() {
+    return (
+  <div id="container">
+    {this.state.display}
+  </div>
+    );
+  }
+};
+</script>
+
   </body>
 
 </html>
