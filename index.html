@@ -8,31 +8,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link href="./styles.css" rel="stylesheet" />
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   </head>
 
   <body>
 
-    <div id="container">
-      <nav>
-        <ul id="navbar">
-          <li>home</li>
-          <li>about</li>
-          <li>experience</li>
-          <li>projects</li>
-          <li>skills</li>
-        </ul>
-      </nav>
+    <div id="root"></div>
 
+    <script type="text/babel">
+class Portfolio extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      display: "Working"
+    }
+  }
+  render() {
+    return (
+  <div id="container">
+    {this.state.display}
+  </div>
+    );
+  }
+};
+    </script>
 
-      <main id="content">
-        <div id="welcome">
-          <header>
-            <h1>Welcome to my<br />portfolio page</h1>
-          </header>
-        </div>
-      </main>
+    <script type="text/babel">
+      const container = document.getElementById('root');
+      const root = ReactDOM.createRoot(container);
+      root.render(<Portfolio />);
+     </script>
 
-    </div>
 
   </body>
 
