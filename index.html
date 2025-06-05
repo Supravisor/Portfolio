@@ -29,6 +29,11 @@ class Portfolio extends React.Component {
     return (
   <div id="container">
     <Navbar />
+
+    <main id="content">
+      <Content display={this.state.display} />
+    </main>
+
   </div>
     );
   }
