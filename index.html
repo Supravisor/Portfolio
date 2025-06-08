@@ -36,7 +36,7 @@ class Portfolio extends React.Component {
   render() {
     return (
   <div id="container">
-    <Navbar />
+    <Navbar switch={this.switchDisplay} />
 
     <main id="content">
       <Content render={this.state.display} />
@@ -56,7 +56,7 @@ class Navbar extends React.Component {
   render() {
     return (
       <nav>
-        <ul id="navbar">
+        <ul id="navbar" onClick={this.props.switch}>
           <li>Home</li>
           <li>About</li>
           <li>Experience</li>
