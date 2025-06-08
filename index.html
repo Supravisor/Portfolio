@@ -22,16 +22,24 @@ class Portfolio extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      display: "Working"
+      display: "Home",
+    }
+    this.switchDisplay = this.switchDisplay.bind(this);
+  }
+  switchDisplay(event) {
+    if (event.target.innerText) {
+      this.setState(() => ({
+        display: event.target.innerText
+      }))
     }
   }
   render() {
     return (
   <div id="container">
-    <Navbar />
+    <Navbar switch={this.switchDisplay} />
 
     <main id="content">
-      <Content />
+      <Content render={this.state.display} />
     </main>
 
   </div>
@@ -48,7 +56,7 @@ class Navbar extends React.Component {
   render() {
     return (
       <nav>
-        <ul id="navbar">
+        <ul id="navbar" onClick={this.props.switch}>
           <li>Home</li>
           <li>About</li>
           <li>Experience</li>
@@ -68,10 +76,18 @@ class Content extends React.Component {
     super(props);
   }
   render() {
-    return (
+    switch(this.props.render) {
+      case "Home":
+        return (
       <Home />
-    );
-
+        );
+        break;
+      case "About":
+        return (
+      <About />
+        );
+        break;
+    }
   }
 };
     </script>
@@ -92,6 +108,21 @@ class Home extends React.Component {
   }
 };
     </script>
+
+    <script type="text/babel">
+class About extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div id="about">
+        <p>About</p>
+      </div>
+    );
+  }
+};
+</script>
 
     <script type="text/babel">
       const container = document.getElementById('root');
