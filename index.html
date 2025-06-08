@@ -39,7 +39,7 @@ class Portfolio extends React.Component {
     <Navbar />
 
     <main id="content">
-      <Content />
+      <Content render={this.state.display} />
     </main>
 
   </div>
@@ -76,10 +76,18 @@ class Content extends React.Component {
     super(props);
   }
   render() {
-    return (
+    switch(this.props.render) {
+      case "Home":
+        return (
       <Home />
-    );
-
+        );
+        break;
+      case "About":
+        return (
+      <About />
+        );
+        break;
+    }
   }
 };
     </script>
