@@ -22,7 +22,15 @@ class Portfolio extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      display: "Working"
+      display: "Home",
+    }
+    this.switchDisplay = this.switchDisplay.bind(this);
+  }
+  switchDisplay(event) {
+    if (event.target.innerText) {
+      this.setState(() => ({
+        display: event.target.innerText
+      }))
     }
   }
   render() {
