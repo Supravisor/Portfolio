@@ -92,6 +92,11 @@ class Content extends React.Component {
           <Experience />
         );
         break;
+      case "Projects":
+        return (
+          <Projects />
+        );
+        break;
     }
   }
 };
@@ -104,7 +109,7 @@ class Home extends React.Component {
   }
   render() {
     return (
-      <div id="welcome">
+      <div id="home">
         <header>
           <h1>Welcome to my<br />portfolio page</h1>
         </header>
@@ -136,8 +141,23 @@ class Experience extends React.Component {
   }
   render() {
     return (
-      <div id="about">
+      <div id="experience">
         <p>Experience</p>
+      </div>
+    );
+  }
+};
+    </script>
+
+    <script type="text/babel">
+class Projects extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div id="projects">
+        <p>Projects</p>
       </div>
     );
   }
