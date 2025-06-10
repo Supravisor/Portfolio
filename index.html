@@ -97,6 +97,11 @@ class Content extends React.Component {
           <Projects />
         );
         break;
+      case "Skills":
+        return (
+          <Skills />
+        );
+        break;
     }
   }
 };
@@ -158,6 +163,21 @@ class Projects extends React.Component {
     return (
       <div id="projects">
         <p>Projects</p>
+      </div>
+    );
+  }
+};
+    </script>
+
+    <script type="text/babel">
+class Skills extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div id="skills">
+        <p>Skills</p>
       </div>
     );
   }
