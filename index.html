@@ -27,7 +27,7 @@ class Portfolio extends React.Component {
     this.switchDisplay = this.switchDisplay.bind(this);
   }
   switchDisplay(event) {
-    if (event.target.innerText) {
+    if (event.target.innerText.length < 11) {
       this.setState(() => ({
         display: event.target.innerText
       }))
