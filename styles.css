@@ -25,3 +25,11 @@ body {
 header {
   text-align: center;
 }
+
+@media (min-width: 0px) {
+
+  .item {
+    padding: 0em 2em 1em;
+  }
+
+}

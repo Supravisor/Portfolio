@@ -56,12 +56,12 @@ class Navbar extends React.Component {
   render() {
     return (
       <nav>
-        <ul id="navbar" onClick={this.props.switch}>
-          <li>Home</li>
-          <li>About</li>
-          <li>Experience</li>
-          <li>Projects</li>
-          <li>Skills</li>
+        <ul id="navbar" onClick={this.props.switch} class="grid">
+          <li class="item">Home</li>
+          <li class="item">About</li>
+          <li class="item">Experience</li>
+          <li class="item">Projects</li>
+          <li class="item">Skills</li>
         </ul>
       </nav>
     );
