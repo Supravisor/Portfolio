@@ -56,13 +56,13 @@ class Navbar extends React.Component {
   render() {
     return (
       <nav>
-        <ul id="navbar" onClick={this.props.switch} class="grid">
-          <li class="item">Home</li>
-          <li class="item">About</li>
-          <li class="item">Experience</li>
-          <li class="item">Projects</li>
-          <li class="item">Skills</li>
-        </ul>
+        <div id={"navbar"} onClick={this.props.switch} className={"grid"}>
+          <div className={"item"}>Home</div>
+          <div className={"item"}>About</div>
+          <div className={"item"}>Experience</div>
+          <div className={"item"}>Projects</div>
+          <div className={"item"}>Skills</div>
+        </div>
       </nav>
     );
   }
@@ -114,7 +114,7 @@ class Home extends React.Component {
   }
   render() {
     return (
-      <div id="home">
+      <div id={"home"}>
         <header>
           <h1>Welcome to my<br />portfolio page</h1>
         </header>
@@ -131,7 +131,7 @@ class About extends React.Component {
   }
   render() {
     return (
-      <div id="about">
+      <div id={"about"}>
         <p>About</p>
       </div>
     );
@@ -146,7 +146,7 @@ class Experience extends React.Component {
   }
   render() {
     return (
-      <div id="experience">
+      <div id={"experience"}>
         <p>Experience</p>
       </div>
     );
@@ -161,7 +161,7 @@ class Projects extends React.Component {
   }
   render() {
     return (
-      <div id="projects">
+      <div id={"projects"}>
         <p>Projects</p>
       </div>
     );
@@ -176,7 +176,7 @@ class Skills extends React.Component {
   }
   render() {
     return (
-      <div id="skills">
+      <div id={"skills"}>
         <p>Skills</p>
       </div>
     );
