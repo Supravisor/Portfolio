@@ -54,3 +54,11 @@ header {
   }
 
 }
+
+@media (min-width: 430px) {
+
+  .item {
+    padding: 0em 1.75em 1em;
+  }
+
+}
