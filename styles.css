@@ -31,3 +31,34 @@ header {
   }
 
 }
+
+@media (min-width: 240px) {
+
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .item {
+    padding: 0em 1em 1em;
+  }
+
+}
+
+@media (min-width: 270px) {
+
+  .item {
+    padding: 0em 1.5em 1em;
+  }
+
+}
+
+@media (min-width: 430px) {
+
+  .item {
+    padding: 0em 1.75em 1em;
+  }
+
+}
