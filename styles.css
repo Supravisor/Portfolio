@@ -31,3 +31,18 @@ header {
   }
 
 }
+
+@media (min-width: 240px) {
+
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .item {
+    padding: 0em 1em 1em;
+  }
+
+}
