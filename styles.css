@@ -27,7 +27,6 @@ header {
 @media (min-width: 0px) {
 
   .item {
-    padding: 1em 2em 0em;
     margin: 1em 1em 0em;
   }
 
@@ -43,7 +42,7 @@ header {
   }
 
   .item {
-    padding: 0em 1em 1em;
+
   }
 
 }
