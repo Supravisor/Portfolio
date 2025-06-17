@@ -51,7 +51,11 @@ header {
 
 }
 
-@media (min-width: 430px) {
+@media (min-width: 410px) {
+
+  .item {
+    margin: 1em 2em 0em;
+  }
 
 }
 
