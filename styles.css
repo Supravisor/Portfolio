@@ -66,3 +66,11 @@ header {
   }
 
 }
+
+@media (min-width: 520px) {
+
+  .item {
+    margin: 1em 3em 0em;
+  }
+
+}
