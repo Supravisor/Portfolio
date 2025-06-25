@@ -60,7 +60,7 @@ class Portfolio extends React.Component {
   render() {
     return (
   <div id="container">
-    <Navbar switch={this.switchDisplay} />
+    <Navbar switch={this.switchDisplay} swap={this.swapColours} />
 
     <main id="content">
       <Content render={this.state.display} />
@@ -89,7 +89,7 @@ class Navbar extends React.Component {
           <span><button className={"item"}>Skills</button></span>
         </div>
 
-        <Mode swap={this.props.swapColours} />
+        <Mode swap={this.props.swap} />
 
       </nav>
     );
