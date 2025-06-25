@@ -37,7 +37,7 @@ class Portfolio extends React.Component {
       }))
     }
   }  
-  switchBackground(event) {
+  swapColours(event) {
     if (event.target.innerText === "light") {
       this.setState(() => ({
         background: "white",
@@ -80,6 +80,7 @@ class Navbar extends React.Component {
   render() {
     return (
       <nav>
+
         <div id={"navbar"} onClick={this.props.switch} className={"grid"}>
           <button className={"item"}>Home</button>
           <button className={"item"}>About</button>
@@ -87,6 +88,9 @@ class Navbar extends React.Component {
           <button className={"item"}>Projects</button>
           <span><button className={"item"}>Skills</button></span>
         </div>
+
+        <Mode swap={this.props.swapColours} />
+
       </nav>
     );
   }
@@ -101,7 +105,7 @@ class Mode extends React.Component {
   }
   render() {
     return (
-      <span id="mode" onClick={this.props.changeBackground} >
+      <span id="mode" onClick={this.props.swap} >
         <button id="light">light</button>
         <button id="auto">auto</button>
         <button id="night">night</button>
