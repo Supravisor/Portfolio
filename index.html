@@ -58,6 +58,10 @@ class Portfolio extends React.Component {
     }
   }
   render() {
+    const body = document.querySelector("body");
+    body.style.backgroundColor = this.state.background;
+    body.style.color = this.state.color;
+
     return (
   <div id="container">
     <Navbar switch={this.switchDisplay} swap={this.swapColours} />
