@@ -95,6 +95,23 @@ class Navbar extends React.Component {
     </script>
 
     <script type="text/babel">
+class Mode extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <span id="mode" onClick={this.props.changeBackground} >
+        <button id="light">light</button>
+        <button id="auto">auto</button>
+        <button id="night">night</button>
+      </span>
+    );
+  }
+};
+    </script>
+
+    <script type="text/babel">
 class Content extends React.Component {
   constructor(props) {
     super(props);
