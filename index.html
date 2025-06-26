@@ -28,7 +28,7 @@ class Portfolio extends React.Component {
       borderColor: "red"
     }
     this.switchDisplay = this.switchDisplay.bind(this);
-    this.switchBackground = this.switchBackground.bind(this);
+    this.swapColours = this.swapColours.bind(this);
   }
   switchDisplay(event) {
     if (event.target.innerText.length < 11) {
@@ -37,7 +37,7 @@ class Portfolio extends React.Component {
       }))
     }
   }  
-  switchBackground(event) {
+  swapColours(event) {
     if (event.target.innerText === "light") {
       this.setState(() => ({
         background: "white",
@@ -58,9 +58,13 @@ class Portfolio extends React.Component {
     }
   }
   render() {
+    const body = document.querySelector("body");
+    body.style.backgroundColor = this.state.background;
+    body.style.color = this.state.color;
+
     return (
   <div id="container">
-    <Navbar switch={this.switchDisplay} />
+    <Navbar switch={this.switchDisplay} swap={this.swapColours} />
 
     <main id="content">
       <Content render={this.state.display} />
@@ -80,6 +84,7 @@ class Navbar extends React.Component {
   render() {
     return (
       <nav>
+
         <div id={"navbar"} onClick={this.props.switch} className={"grid"}>
           <button className={"item"}>Home</button>
           <button className={"item"}>About</button>
@@ -87,10 +92,30 @@ class Navbar extends React.Component {
           <button className={"item"}>Projects</button>
           <span><button className={"item"}>Skills</button></span>
         </div>
+
+        <Mode swap={this.props.swap} />
+
       </nav>
     );
   }
 
+};
+    </script>
+
+    <script type="text/babel">
+class Mode extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <span id="mode" onClick={this.props.swap} >
+        <button id="light">light</button>
+        <button id="auto">auto</button>
+        <button id="night">night</button>
+      </span>
+    );
+  }
 };
     </script>
 
