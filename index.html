@@ -64,7 +64,7 @@ class Portfolio extends React.Component {
 
     return (
   <div id="container">
-    <Navbar switch={this.switchDisplay} swap={this.swapColours} />
+    <Navbar switch={this.switchDisplay} swap={this.swapColours} background={this.state.background} />
 
     <main id="content">
       <Content render={this.state.display} />
