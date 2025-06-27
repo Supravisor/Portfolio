@@ -42,18 +42,21 @@ class Portfolio extends React.Component {
     if (event.target.innerText === "light") {
       this.setState(() => ({
         background: "white",
+        button: "white",
         color: "black"
       }))
     }
     else if (event.target.innerText === "auto") {
       this.setState(() => ({
         background: "DodgerBlue",
+        button: "white",
         color: "black"
       }))
     }
     else {
       this.setState(() => ({
         background: "black",
+        button: "black",
         color: "white"
       }))
     }
