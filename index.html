@@ -24,6 +24,7 @@ class Portfolio extends React.Component {
     this.state = {
       display: "Home",
       background: "DodgerBlue",
+      button: "white",
       color: "black",
       borderColor: "red"
     }
@@ -41,18 +42,21 @@ class Portfolio extends React.Component {
     if (event.target.innerText === "light") {
       this.setState(() => ({
         background: "white",
+        button: "white",
         color: "black"
       }))
     }
     else if (event.target.innerText === "auto") {
       this.setState(() => ({
         background: "DodgerBlue",
+        button: "white",
         color: "black"
       }))
     }
     else {
       this.setState(() => ({
         background: "black",
+        button: "black",
         color: "white"
       }))
     }
@@ -64,7 +68,7 @@ class Portfolio extends React.Component {
 
     return (
   <div id="container">
-    <Navbar switch={this.switchDisplay} swap={this.swapColours} />
+    <Navbar switch={this.switchDisplay} swap={this.swapColours} button={this.state.button} />
 
     <main id="content">
       <Content render={this.state.display} />
@@ -86,7 +90,7 @@ class Navbar extends React.Component {
       <nav>
 
         <div id={"navbar"} onClick={this.props.switch} className={"grid"}>
-          <button className={"item"}>Home</button>
+          <button className={"item"} style={{background: this.props.button}}>Home</button>
           <button className={"item"}>About</button>
           <button className={"item"}>Experience</button>
           <button className={"item"}>Projects</button>
