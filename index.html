@@ -68,7 +68,7 @@ class Portfolio extends React.Component {
 
     return (
   <div id="container">
-    <Navbar switch={this.switchDisplay} swap={this.swapColours} background={this.state.background} />
+    <Navbar switch={this.switchDisplay} swap={this.swapColours} buton={this.state.button} />
 
     <main id="content">
       <Content render={this.state.display} />
@@ -90,7 +90,7 @@ class Navbar extends React.Component {
       <nav>
 
         <div id={"navbar"} onClick={this.props.switch} className={"grid"}>
-          <button className={"item"} style={{background: this.props.background}}>Home</button>
+          <button className={"item"} style={{background: this.props.button}}>Home</button>
           <button className={"item"}>About</button>
           <button className={"item"}>Experience</button>
           <button className={"item"}>Projects</button>
