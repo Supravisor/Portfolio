@@ -91,10 +91,10 @@ class Navbar extends React.Component {
 
         <div id={"navbar"} onClick={this.props.switch} className={"grid"}>
           <button className={"item"} style={{background: this.props.button}}>Home</button>
-          <button className={"item"}>About</button>
-          <button className={"item"}>Experience</button>
-          <button className={"item"}>Projects</button>
-          <span><button className={"item"}>Skills</button></span>
+          <button className={"item"} style={{background: this.props.button}}>About</button>
+          <button className={"item"} style={{background: this.props.button}}>Experience</button>
+          <button className={"item"} style={{background: this.props.button}}>Projects</button>
+          <span><button className={"item"} style={{background: this.props.button}}>Skills</button></span>
         </div>
 
         <Mode swap={this.props.swap} />
