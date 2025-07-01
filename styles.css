@@ -26,6 +26,10 @@ header {
 
 #mode {
   background: rgb(170, 170, 170);
+  border: 1px solid black;
+  padding: 1em;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 #mode > button {
