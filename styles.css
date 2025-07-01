@@ -24,6 +24,10 @@ header {
   text-align: center;
 }
 
+#mode {
+  background: rgb(170, 170, 170);
+}
+
 #mode > button {
   margin: 0.5em;
   border-radius: 7px;
