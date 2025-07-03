@@ -39,6 +39,20 @@ header {
   padding: 0.5em;
 }
 
+#light, #auto {
+  border: 1px solid black;
+}
+
+#auto {
+  background: DodgerBlue;
+}
+
+#night {
+  background: black;
+  border: 1px solid white;
+  color: white;
+}
+
 @media (min-width: 0px) {
 
   .item {
