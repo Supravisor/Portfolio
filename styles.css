@@ -43,6 +43,10 @@ header {
   border: 1px solid black;
 }
 
+#auto {
+  background: DodgerBlue;
+}
+
 #night {
   background: black;
   border: 1px solid white;
