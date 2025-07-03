@@ -3,6 +3,11 @@ body {
   font-family: Arial;
 }
 
+nav {
+  margin: -0.5em;
+  padding-top: 1em;
+}
+
 #navbar {
   list-style: none;
   text-align: center;
