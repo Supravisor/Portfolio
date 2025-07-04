@@ -8,11 +8,6 @@ nav {
   padding-top: 1em;
 }
 
-#navbar {
-  list-style: none;
-  text-align: center;
-}
-
 #welcome {
   display: table;
   display: table-cell;
