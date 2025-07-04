@@ -27,7 +27,8 @@ class Portfolio extends React.Component {
       button: "white",
       color: "black",
       borderColor: "red",
-      borderHome: "4px"
+      borderHome: "4px",
+      borderAbout: "2px",
     }
     this.switchDisplay = this.switchDisplay.bind(this);
     this.swapColours = this.swapColours.bind(this);
@@ -74,7 +75,7 @@ class Portfolio extends React.Component {
 
     return (
   <div id="container">
-    <Navbar switch={this.switchDisplay} swap={this.swapColours} button={this.state.button} color={this.state.color} borderHome={this.state.borderHome} />
+    <Navbar switch={this.switchDisplay} swap={this.swapColours} button={this.state.button} color={this.state.color} borderHome={this.state.borderHome} borderAbout={this.state.borderAbout} />
 
     <main id="content">
       <Content render={this.state.display} />
@@ -97,7 +98,7 @@ class Navbar extends React.Component {
 
         <div id={"navbar"} onClick={this.props.switch} className={"grid"}>
           <button className={"item"} style={{background: this.props.button, color: this.props.color, borderColor: this.props.color, borderWidth: this.props.borderHome}}>Home</button>
-          <button className={"item"} style={{background: this.props.button, color: this.props.color, borderColor: this.props.color}}>About</button>
+          <button className={"item"} style={{background: this.props.button, color: this.props.color, borderColor: this.props.color, borderWidth: this.props.borderAbout}}>About</button>
           <button className={"item"} style={{background: this.props.button, color: this.props.color, borderColor: this.props.color}}>Experience</button>
           <button className={"item"} style={{background: this.props.button, color: this.props.color, borderColor: this.props.color}}>Projects</button>
           <span><button className={"item"} style={{background: this.props.button, color: this.props.color, borderColor: this.props.color}}>Skills</button></span>
