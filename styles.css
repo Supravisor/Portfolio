@@ -19,6 +19,10 @@ header {
   text-align: center;
 }
 
+#navbar > button, #navbar > span > button {
+  border-radius: 7px;
+}
+
 #mode > button {
   margin: 0.5em;
   border-radius: 7px;
