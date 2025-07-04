@@ -36,7 +36,12 @@ class Portfolio extends React.Component {
     if (event.target.innerText.length < 11) {
       this.setState(() => ({
         display: event.target.innerText
-      }))
+      }));
+    }
+    if (event.target.innerText === "Home" && this.state.borderHome === "2px") {
+      this.setState(() => ({
+        borderHome: "4px",
+      }));
     }
   }  
   swapColours(event) {
@@ -45,21 +50,21 @@ class Portfolio extends React.Component {
         background: "white",
         button: "white",
         color: "black"
-      }))
+      }));
     }
     else if (event.target.innerText === "auto") {
       this.setState(() => ({
         background: "DodgerBlue",
         button: "white",
         color: "black"
-      }))
+      }));
     }
     else if (event.target.innerText === "night") {
       this.setState(() => ({
         background: "black",
         button: "black",
         color: "white"
-      }))
+      }));
     }
   }
   render() {
