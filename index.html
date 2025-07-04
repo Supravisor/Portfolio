@@ -53,7 +53,7 @@ class Portfolio extends React.Component {
         color: "black"
       }))
     }
-    else {
+    else if (event.target.innerText === "night") {
       this.setState(() => ({
         background: "black",
         button: "black",
