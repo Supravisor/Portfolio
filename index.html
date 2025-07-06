@@ -57,6 +57,15 @@ class Portfolio extends React.Component {
         borderSkills: "2px"
       }))
     }
+    if (event.target.innerText === "Experience" && this.state.borderExperience === "2px") {
+      this.setState(() => ({
+        borderHome: "2px",
+        borderAbout: "2px",
+        borderExperience: "4px",
+        borderProjects: "2px",
+        borderSkills: "2px"
+      }))
+    }
   }  
   swapColours(event) {
     if (event.target.innerText === "light") {
