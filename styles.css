@@ -141,6 +141,10 @@ header {
 
 @media (min-width: 580px) {
 
+  nav {
+    height: 165px;
+  }
+
   #navbar {
     width: calc(100vw - 120px);
   }
