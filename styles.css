@@ -139,7 +139,15 @@ header {
 
 }
 
-@media (min-width: 560px) {
+@media (min-width: 580px) {
+
+  nav {
+    height: 165px;
+  }
+
+  #navbar {
+    width: calc(100vw - 120px);
+  }
 
   #mode {
     display: block;
