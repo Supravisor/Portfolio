@@ -139,6 +139,14 @@ header {
 
 }
 
+@media (min-width: 560px) {
+
+  #mode {
+    display: block;
+  }
+
+}
+
 @media (min-width: 800px) {
 
   .grid {
