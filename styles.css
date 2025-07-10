@@ -125,6 +125,9 @@ header {
   .grid .item:nth-child(5) {
     grid-area: skills;
   }
+  .grid .item:nth-child(6) {
+    grid-area: empty;
+  }
 
   .grid {
     display: grid;
@@ -134,7 +137,7 @@ header {
     grid-template-rows: auto;
     grid-template-areas:
       "home about experience"
-      "projects skills skills";
+      "projects skills empty";
   }
 
 }
@@ -160,7 +163,7 @@ header {
 
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
 
   .grid {
     display: flex;
