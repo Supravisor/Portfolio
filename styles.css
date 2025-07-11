@@ -163,7 +163,7 @@ header {
 
 }
 
-@media (min-width: 850px) {
+@media (min-width: 900px) {
 
   .grid {
     display: flex;
