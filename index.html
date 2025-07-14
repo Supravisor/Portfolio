@@ -273,6 +273,17 @@ class Projects extends React.Component {
       }
     }
 
+    class ProjectBoard {
+      constructor() {
+        this.projects = []
+      }
+
+      add(Project) {
+        this.projects.push(Project)
+      }
+
+    }
+
     return (
       <div id={"projects"}>
         <p>Projects</p>
