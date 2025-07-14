@@ -263,6 +263,29 @@ class Projects extends React.Component {
     super(props);
   }
   render() {
+
+    class Project {
+      constructor(title, description, link, htm, css) {
+        this.title = title,
+        this.description = description,
+        this.link = "https://" + link,
+        this.percentages = [htm, css, 100 - htm - css]
+      }
+    }
+
+    class ProjectBoard {
+      constructor() {
+        this.projects = []
+      }
+
+      add(Project) {
+        this.projects.push(Project)
+      }
+
+    }
+
+    let board = new ProjectBoard();
+
     return (
       <div id={"projects"}>
         <p>Projects</p>
