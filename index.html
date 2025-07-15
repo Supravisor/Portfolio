@@ -285,10 +285,12 @@ class Projects extends React.Component {
     }
 
     let board = new ProjectBoard();
+    let symptomChecker = new Project("Symptom Checker", "Use the symptom checker to find the condition, disease, or health issue you may be experiencing.", "github.com/Supravisor/Symptom-Checker", 91, 3);
+    board.add(symptomChecker);
 
     return (
       <div id={"projects"}>
-        <p>Projects</p>
+        <div>{board.projects.map(el => <div className="project-tile"><p className="project-title"><a href={el.link} style={{color: this.props.anchorProjects}}>{el.title}</a></p> <p className="project-content" style={{background: this.props.background, color: this.props.color}}><p>{el.description}</p> <article className="project-percentages">HTML <span>{el.percentages[0]}%</span></article> <article className="project-percentages">CSS <span>{el.percentages[1]}%</span></article> <article className="project-percentages">JS <span>{el.percentages[2]}%</span></article></p></div>)}</div>
       </div>
     );
   }
