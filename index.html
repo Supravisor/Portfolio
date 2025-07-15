@@ -285,6 +285,8 @@ class Projects extends React.Component {
     }
 
     let board = new ProjectBoard();
+    let symptomChecker = new Project("Symptom Checker", "Use the symptom checker to find the condition, disease, or health issue you may be experiencing.", "github.com/Supravisor/Symptom-Checker", 91, 3);
+    board.add(symptomChecker);
 
     return (
       <div id={"projects"}>
