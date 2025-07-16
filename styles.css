@@ -66,6 +66,7 @@ header {
   border-left: 2px solid grey;
   border-right: 2px solid grey;
   border-bottom: 2px solid grey;
+  margin-top: -1em;
 }
 
 @media (min-width: 0px) {
