@@ -63,6 +63,7 @@ header {
 
 .project-content {
   padding: 1em;
+  border-left: 2px solid grey;
 }
 
 @media (min-width: 0px) {
