@@ -43,6 +43,11 @@ header {
   color: white;
 }
 
+.project-tile {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media (min-width: 0px) {
 
   #mode {
