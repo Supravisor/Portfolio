@@ -58,6 +58,7 @@ header {
   border-left: 2px solid grey;
   border-right: 2px solid grey;
   padding: 1em;
+  text-align: center;
 }
 
 @media (min-width: 0px) {
