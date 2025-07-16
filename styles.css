@@ -55,6 +55,7 @@ header {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom: 2px solid grey;
+  border-left: 2px solid grey;
 }
 
 @media (min-width: 0px) {
