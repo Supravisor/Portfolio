@@ -43,6 +43,19 @@ header {
   color: white;
 }
 
+.project-tile {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-title {
+  width: calc(100% - 2em - 4px);
+  background: red;
+  border-top: 2px solid grey;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
 @media (min-width: 0px) {
 
   #mode {
