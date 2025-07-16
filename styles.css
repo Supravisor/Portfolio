@@ -57,6 +57,7 @@ header {
   border-bottom: 2px solid grey;
   border-left: 2px solid grey;
   border-right: 2px solid grey;
+  padding: 1em;
 }
 
 @media (min-width: 0px) {
