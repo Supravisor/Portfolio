@@ -50,6 +50,7 @@ header {
 
 .project-title {
   width: calc(100% - 2em - 4px);
+  background: red;
 }
 
 @media (min-width: 0px) {
