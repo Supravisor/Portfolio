@@ -48,6 +48,10 @@ header {
   margin-right: auto;
 }
 
+.project-title {
+  width: calc(100% - 2em - 4px);
+}
+
 @media (min-width: 0px) {
 
   #mode {
