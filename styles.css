@@ -134,6 +134,10 @@ header {
     display: flex;
   }
 
+  .project-tile {
+    min-width: 400px;
+  }
+
 }
 
 @media (min-width: 520px) {
