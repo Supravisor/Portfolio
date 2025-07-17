@@ -69,6 +69,12 @@ header {
   margin-top: -1em;
 }
 
+.project-content > article {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 @media (min-width: 0px) {
 
   #mode {
@@ -82,6 +88,10 @@ header {
 
   .item {
     margin: 1em 1em 0em;
+  }
+
+  .project-tile {
+    width: 90vw;
   }
 
 }
