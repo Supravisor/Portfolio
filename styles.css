@@ -90,6 +90,10 @@ header {
     margin: 1em 1em 0em;
   }
 
+  .project-tile {
+    width: 90vw;
+  }
+
 }
 
 @media (min-width: 240px) {
