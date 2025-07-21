@@ -92,6 +92,7 @@ class Portfolio extends React.Component {
   swapColours(event) {
     if (event.target.innerText === "light") {
       this.setState(() => ({
+        anchor: "blue",
         background: "white",
         button: "white",
         color: "black"
@@ -99,6 +100,7 @@ class Portfolio extends React.Component {
     }
     else if (event.target.innerText === "auto") {
       this.setState(() => ({
+        anchor: "yellow",
         background: "DodgerBlue",
         button: "white",
         color: "black"
@@ -106,6 +108,7 @@ class Portfolio extends React.Component {
     }
     else if (event.target.innerText === "night") {
       this.setState(() => ({
+        anchor: "DodgerBlue",
         background: "black",
         button: "black",
         color: "white"
