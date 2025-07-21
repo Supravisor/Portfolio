@@ -125,7 +125,7 @@ class Portfolio extends React.Component {
     <Navbar switch={this.switchDisplay} swap={this.swapColours} button={this.state.button} color={this.state.color} borderHome={this.state.borderHome} borderAbout={this.state.borderAbout} borderExperience={this.state.borderExperience} borderProjects={this.state.borderProjects} borderSkills={this.state.borderSkills} />
 
     <main id="content">
-      <Content render={this.state.display} />
+      <Content render={this.state.display} anchor={this.state.anchor} />
     </main>
 
   </div>
@@ -191,7 +191,7 @@ class Content extends React.Component {
         break;
       case "About":
         return (
-          <About />
+          <About anchor={this.props.anchor} />
         );
         break;
       case "Experience":
@@ -240,7 +240,7 @@ class About extends React.Component {
     return (
       <div id={"about"}>
         <p>Create engaging and purpose driven webpages.</p>
-        <p>A moderator on the freeCodeCamp <a href="https://forum.freecodecamp.org/">forum</a>, guiding aspiring web developers on how to code and grasp programming concepts.</p>
+        <p>A moderator on the freeCodeCamp <a href="https://forum.freecodecamp.org/" style={{color: this.props.anchor}}>forum</a>, guiding aspiring web developers on how to code and grasp programming concepts.</p>
       </div>
     );
   }
