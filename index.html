@@ -32,6 +32,7 @@ class Portfolio extends React.Component {
       borderAbout: "2px",
       borderExperience: "2px",
       borderProjects: "2px",
+      anchorProjects: "yellow",
       borderSkills: "2px"
     }
     this.switchDisplay = this.switchDisplay.bind(this);
@@ -93,6 +94,7 @@ class Portfolio extends React.Component {
     if (event.target.innerText === "light") {
       this.setState(() => ({
         anchor: "blue",
+        anchorProjects: "white",
         background: "white",
         button: "white",
         color: "black"
@@ -101,6 +103,7 @@ class Portfolio extends React.Component {
     else if (event.target.innerText === "auto") {
       this.setState(() => ({
         anchor: "yellow",
+        anchorProjects: "yellow",
         background: "DodgerBlue",
         button: "white",
         color: "black"
@@ -109,6 +112,7 @@ class Portfolio extends React.Component {
     else if (event.target.innerText === "night") {
       this.setState(() => ({
         anchor: "DodgerBlue",
+        anchorProjects: "black",
         background: "black",
         button: "black",
         color: "white"
@@ -125,7 +129,7 @@ class Portfolio extends React.Component {
     <Navbar switch={this.switchDisplay} swap={this.swapColours} button={this.state.button} color={this.state.color} borderHome={this.state.borderHome} borderAbout={this.state.borderAbout} borderExperience={this.state.borderExperience} borderProjects={this.state.borderProjects} borderSkills={this.state.borderSkills} />
 
     <main id="content">
-      <Content render={this.state.display} anchor={this.state.anchor} />
+      <Content render={this.state.display} anchor={this.state.anchor} anchorProjects={this.state.anchorProjects} />
     </main>
 
   </div>
@@ -201,7 +205,7 @@ class Content extends React.Component {
         break;
       case "Projects":
         return (
-          <Projects />
+          <Projects anchorProjects={this.props.anchorProjects} />
         );
         break;
       case "Skills":
