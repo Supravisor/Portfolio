@@ -80,6 +80,10 @@ header {
   width: 100%;
 }
 
+#skills {
+  display: flex;
+}
+
 @media (min-width: 0px) {
 
   #mode {
