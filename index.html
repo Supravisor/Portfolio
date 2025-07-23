@@ -129,7 +129,7 @@ class Portfolio extends React.Component {
     <Navbar switch={this.switchDisplay} swap={this.swapColours} button={this.state.button} color={this.state.color} borderHome={this.state.borderHome} borderAbout={this.state.borderAbout} borderExperience={this.state.borderExperience} borderProjects={this.state.borderProjects} borderSkills={this.state.borderSkills} />
 
     <main id="content">
-      <Content render={this.state.display} anchor={this.state.anchor} anchorProjects={this.state.anchorProjects} />
+      <Content render={this.state.display} anchor={this.state.anchor} anchorProjects={this.state.anchorProjects} background={this.state.button} />
     </main>
 
   </div>
