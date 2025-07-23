@@ -107,6 +107,7 @@ header {
 
   img {
     max-width: 150px;
+    margin-left: calc(50% - 75px);
   }
 
 }
