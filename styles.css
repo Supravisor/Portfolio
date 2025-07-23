@@ -114,6 +114,10 @@ header {
     width: 275px;
   }
 
+  figcaption {
+    text-align: center;
+  }
+
 }
 
 @media (min-width: 240px) {
