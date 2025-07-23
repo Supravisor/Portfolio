@@ -83,6 +83,7 @@ header {
 #skills {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 @media (min-width: 0px) {
