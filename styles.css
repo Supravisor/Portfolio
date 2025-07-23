@@ -29,11 +29,11 @@ header {
   padding: 0.5em;
 }
 
-#light, #auto {
+#light, #bright {
   border: 1px solid black;
 }
 
-#auto {
+#bright {
   background: DodgerBlue;
 }
 

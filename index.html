@@ -100,7 +100,7 @@ class Portfolio extends React.Component {
         color: "black"
       }));
     }
-    else if (event.target.innerText === "auto") {
+    else if (event.target.innerText === "bright") {
       this.setState(() => ({
         anchor: "yellow",
         anchorProjects: "yellow",
@@ -173,7 +173,7 @@ class Mode extends React.Component {
     return (
       <span id="mode" onClick={this.props.swap} >
         <button id="light">light</button>
-        <button id="auto">auto</button>
+        <button id="bright">bright</button>
         <button id="night">night</button>
       </span>
     );
