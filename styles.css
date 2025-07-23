@@ -110,6 +110,10 @@ header {
     margin-left: calc(50% - 75px);
   }
 
+  .skills-image {
+    width: 275px;
+  }
+
 }
 
 @media (min-width: 240px) {
