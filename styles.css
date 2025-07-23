@@ -80,12 +80,6 @@ header {
   width: 100%;
 }
 
-#skills {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
 @media (min-width: 0px) {
 
   #mode {
@@ -103,6 +97,16 @@ header {
 
   .project-tile {
     width: 90vw;
+  }
+
+  #skills {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  img {
+    max-width: 150px;
   }
 
 }
