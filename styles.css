@@ -99,6 +99,25 @@ header {
     width: 90vw;
   }
 
+  #skills {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  img {
+    max-width: 150px;
+    margin-left: calc(50% - 75px);
+  }
+
+  .skills-image {
+    width: 275px;
+  }
+
+  figcaption {
+    text-align: center;
+  }
+
 }
 
 @media (min-width: 240px) {
