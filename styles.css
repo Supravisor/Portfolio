@@ -97,6 +97,7 @@ header {
 
   #navicon {
     position: fixed;
+    bottom: 0.5em;
   }
 
   .project-tile {
