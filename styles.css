@@ -95,6 +95,15 @@ header {
     margin: 1em 1em 0em;
   }
 
+  #navicon {
+    position: fixed;
+    bottom: 0.5em;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
   .project-tile {
     width: 90vw;
   }
