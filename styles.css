@@ -95,6 +95,10 @@ header {
     margin: 1em 1em 0em;
   }
 
+  #navicon {
+    position: fixed;
+  }
+
   .project-tile {
     width: 90vw;
   }
