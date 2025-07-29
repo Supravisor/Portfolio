@@ -118,7 +118,7 @@ header {
     flex-wrap: wrap;
   }
 
-  img {
+  #navbar img {
     max-width: 150px;
     margin-left: calc(50% - 75px);
   }
