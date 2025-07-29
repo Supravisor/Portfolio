@@ -104,6 +104,10 @@ header {
     flex-wrap: wrap;
   }
 
+  #navicon img {
+    width: 2em;
+  }
+
   .project-tile {
     width: 90vw;
   }
