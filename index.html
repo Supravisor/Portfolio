@@ -98,7 +98,8 @@ class Portfolio extends React.Component {
         anchorProjects: "white",
         background: "white",
         button: "white",
-        color: "black"
+        color: "black",
+        mobileBar: "rgb(200, 200, 200)",
       }));
     }
     else if (event.target.innerText === "bright") {
@@ -107,7 +108,8 @@ class Portfolio extends React.Component {
         anchorProjects: "yellow",
         background: "DodgerBlue",
         button: "white",
-        color: "black"
+        color: "black",
+        mobileBar: "yellow"
       }));
     }
     else if (event.target.innerText === "night") {
@@ -116,7 +118,8 @@ class Portfolio extends React.Component {
         anchorProjects: "black",
         background: "black",
         button: "black",
-        color: "white"
+        color: "white",
+        mobileBar: "white"
       }));
     }
   }
@@ -156,7 +159,7 @@ class Navbar extends React.Component {
           <button className={"item"} style={{background: this.props.button, color: this.props.color, borderColor: this.props.color, borderWidth: this.props.borderSkills}}>Skills</button>
         </div>
 
-        <div id={"navicon"} style={{background: this.props.mobileBar}}>
+        <div id={"navicon"} onClick={this.props.switch} style={{background: this.props.mobileBar}}>
           <img src={"https://raw.githubusercontent.com/Supravisor/Portfolio/7461c529a0dc944ce64af086c578e98faf56f73b/images/home.svg"} alt={"home icon"} />
           <img src={"https://raw.githubusercontent.com/Supravisor/Portfolio/023969ea1e50ed73b51cef9467758d14ebec67bc/images/user.svg"} alt={"user icon"} />
           <img src={"https://raw.githubusercontent.com/Supravisor/Portfolio/79cc5d99fc7b5a003f08509a6605963af6e6efd8/images/briefcase.svg"} alt={"briefcase icon"} />
