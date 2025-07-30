@@ -105,6 +105,10 @@ header {
     left: 0;
   }
 
+  #navicon .item {
+    margin: 0.5em 1em 0.5em;
+  }
+
   #navicon img {
     width: 1.5em;
   }
