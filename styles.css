@@ -97,7 +97,7 @@ header {
 
   #navicon {
     position: fixed;
-    bottom: 0.5em;
+    bottom: 0;
     width: 100vw;
     display: flex;
     justify-content: space-around;
