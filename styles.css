@@ -102,6 +102,7 @@ header {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    left: 0;
   }
 
   #navicon img {
