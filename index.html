@@ -40,7 +40,7 @@ class Portfolio extends React.Component {
     this.swapColours = this.swapColours.bind(this);
   }
   switchDisplay(event) {
-    if (event.target.innerText.length < 11) {
+    if (event.target.innerText.length < 11 && event.target.id !== "navicon") {
       this.setState(() => ({
         display: event.target.innerText || event.target.id
       }));
