@@ -54,7 +54,7 @@ class Portfolio extends React.Component {
         borderSkills: "2px"
       }));
     }
-    if (event.target.innerText === "About" && this.state.borderAbout === "2px") {
+    if ((event.target.innerText === "About" || event.target.id === "About") && this.state.borderAbout === "2px") {
       this.setState(() => ({
         borderHome: "2px",
         borderAbout: "4px",
