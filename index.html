@@ -40,9 +40,9 @@ class Portfolio extends React.Component {
     this.swapColours = this.swapColours.bind(this);
   }
   switchDisplay(event) {
-    if (event.target.innerText.length < 11) {
+    if (event.target.innerText.length < 11 && event.target.id !== "navicon") {
       this.setState(() => ({
-        display: event.target.innerText
+        display: event.target.innerText || event.target.id
       }));
     }
     if (event.target.innerText === "Home" && this.state.borderHome === "2px") {
@@ -160,11 +160,11 @@ class Navbar extends React.Component {
         </div>
 
         <div id={"navicon"} onClick={this.props.switch} style={{background: this.props.mobileBar}}>
-          <img className={"icon"} src={"https://raw.githubusercontent.com/Supravisor/Portfolio/7461c529a0dc944ce64af086c578e98faf56f73b/images/home.svg"} alt={"home icon"} />
-          <img className={"icon"} src={"https://raw.githubusercontent.com/Supravisor/Portfolio/023969ea1e50ed73b51cef9467758d14ebec67bc/images/user.svg"} alt={"user icon"} />
-          <img className={"icon"} src={"https://raw.githubusercontent.com/Supravisor/Portfolio/79cc5d99fc7b5a003f08509a6605963af6e6efd8/images/briefcase.svg"} alt={"briefcase icon"} />
-          <img className={"icon"} src={"https://raw.githubusercontent.com/Supravisor/Portfolio/0d0dcce87e28d785cb578bedf82b75a577171dcc/images/folder.svg"} alt={"folder icon"} />
-          <img className={"icon"} src={"https://raw.githubusercontent.com/Supravisor/Portfolio/6482bbc9da7d8c0931ae2d71e706efe5ad232d6e/images/code.svg"} alt={"code icon"} />
+          <img className={"icon"} src={"https://raw.githubusercontent.com/Supravisor/Portfolio/7461c529a0dc944ce64af086c578e98faf56f73b/images/home.svg"} alt={"home icon"} id={"Home"} />
+          <img className={"icon"} src={"https://raw.githubusercontent.com/Supravisor/Portfolio/023969ea1e50ed73b51cef9467758d14ebec67bc/images/user.svg"} alt={"user icon"} id={"About"} />
+          <img className={"icon"} src={"https://raw.githubusercontent.com/Supravisor/Portfolio/79cc5d99fc7b5a003f08509a6605963af6e6efd8/images/briefcase.svg"} alt={"briefcase icon"} id={"Experience"} />
+          <img className={"icon"} src={"https://raw.githubusercontent.com/Supravisor/Portfolio/0d0dcce87e28d785cb578bedf82b75a577171dcc/images/folder.svg"} alt={"folder icon"} id={"Projects"} />
+          <img className={"icon"} src={"https://raw.githubusercontent.com/Supravisor/Portfolio/6482bbc9da7d8c0931ae2d71e706efe5ad232d6e/images/code.svg"} alt={"code icon"} id={"Skills"} />
         </div>
 
         <Mode swap={this.props.swap} />
