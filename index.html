@@ -45,7 +45,7 @@ class Portfolio extends React.Component {
         display: event.target.innerText || event.target.id
       }));
     }
-    if (event.target.innerText === "Home" && this.state.borderHome === "2px") {
+    if ((event.target.innerText === "Home" || event.target.id === "Home") && this.state.borderHome === "2px") {
       this.setState(() => ({
         borderHome: "4px",
         borderAbout: "2px",
@@ -54,7 +54,7 @@ class Portfolio extends React.Component {
         borderSkills: "2px"
       }));
     }
-    if (event.target.innerText === "About" && this.state.borderAbout === "2px") {
+    if ((event.target.innerText === "About" || event.target.id === "About") && this.state.borderAbout === "2px") {
       this.setState(() => ({
         borderHome: "2px",
         borderAbout: "4px",
@@ -63,7 +63,7 @@ class Portfolio extends React.Component {
         borderSkills: "2px"
       }))
     }
-    if (event.target.innerText === "Experience" && this.state.borderExperience === "2px") {
+    if ((event.target.innerText === "Experience" || event.target.id === "Experience") && this.state.borderExperience === "2px") {
       this.setState(() => ({
         borderHome: "2px",
         borderAbout: "2px",
@@ -72,7 +72,7 @@ class Portfolio extends React.Component {
         borderSkills: "2px"
       }))
     }
-    if (event.target.innerText === "Projects" && this.state.borderProjects === "2px") {
+    if ((event.target.innerText === "Projects" || event.target.id === "Projects") && this.state.borderProjects === "2px") {
       this.setState(() => ({
         borderHome: "2px",
         borderAbout: "2px",
@@ -81,7 +81,7 @@ class Portfolio extends React.Component {
         borderSkills: "2px"
       }))
     }
-    if (event.target.innerText === "Skills" && this.state.borderSkills === "2px") {
+    if ((event.target.innerText === "Skills" || event.target.id === "Skills") && this.state.borderSkills === "2px") {
       this.setState(() => ({
         borderHome: "2px",
         borderAbout: "2px",
