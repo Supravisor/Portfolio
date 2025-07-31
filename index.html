@@ -63,7 +63,7 @@ class Portfolio extends React.Component {
         borderSkills: "2px"
       }))
     }
-    if (event.target.innerText === "Experience" && this.state.borderExperience === "2px") {
+    if ((event.target.innerText === "Experience" || event.target.id === "Experience") && this.state.borderExperience === "2px") {
       this.setState(() => ({
         borderHome: "2px",
         borderAbout: "2px",
