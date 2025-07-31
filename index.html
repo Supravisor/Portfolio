@@ -42,7 +42,7 @@ class Portfolio extends React.Component {
   switchDisplay(event) {
     if (event.target.innerText.length < 11) {
       this.setState(() => ({
-        display: event.target.innerText
+        display: event.target.innerText || event.target.id
       }));
     }
     if (event.target.innerText === "Home" && this.state.borderHome === "2px") {
