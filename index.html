@@ -32,7 +32,6 @@ class Portfolio extends React.Component {
       borderAbout: "2px",
       borderExperience: "2px",
       borderProjects: "2px",
-      anchorProjects: "yellow",
       borderSkills: "2px",
       mobileBar: "gold",
       titleProjects: "red"
@@ -96,7 +95,6 @@ class Portfolio extends React.Component {
     if (event.target.innerText === "light") {
       this.setState(() => ({
         anchor: "blue",
-        anchorProjects: "white",
         background: "white",
         button: "white",
         color: "black",
@@ -107,7 +105,6 @@ class Portfolio extends React.Component {
     else if (event.target.innerText === "bright") {
       this.setState(() => ({
         anchor: "yellow",
-        anchorProjects: "yellow",
         background: "DodgerBlue",
         button: "white",
         color: "black",
@@ -118,7 +115,6 @@ class Portfolio extends React.Component {
     else if (event.target.innerText === "night") {
       this.setState(() => ({
         anchor: "DodgerBlue",
-        anchorProjects: "black",
         background: "black",
         button: "black",
         color: "white",
@@ -137,7 +133,7 @@ class Portfolio extends React.Component {
     <Navbar switch={this.switchDisplay} swap={this.swapColours} button={this.state.button} color={this.state.color} borderHome={this.state.borderHome} borderAbout={this.state.borderAbout} borderExperience={this.state.borderExperience} borderProjects={this.state.borderProjects} borderSkills={this.state.borderSkills} mobileBar={this.state.mobileBar} />
 
     <main id="content">
-      <Content render={this.state.display} anchor={this.state.anchor} anchorProjects={this.state.anchorProjects} background={this.state.button} titleProjects={this.state.titleProjects} />
+      <Content render={this.state.display} anchor={this.state.anchor} background={this.state.button} titleProjects={this.state.titleProjects} />
     </main>
 
   </div>
@@ -221,7 +217,7 @@ class Content extends React.Component {
         break;
       case "Projects":
         return (
-          <Projects anchorProjects={this.props.anchorProjects} titleProjects={this.props.titleProjects} />
+          <Projects anchor={this.props.anchor} titleProjects={this.props.titleProjects} />
         );
         break;
       case "Skills":
@@ -323,7 +319,7 @@ class Projects extends React.Component {
 
     return (
       <div id={"projects"}>
-        <div>{board.projects.map(el => <div className={"project-tile"}><p className={"project-title"} style={{background: this.props.titleProjects}}><a href={el.link} style={{color: this.props.anchorProjects}}>{el.title}</a></p> <p className="project-content" style={{background: this.props.background, color: this.props.color}}><p>{el.description}</p> <article className="project-percentages">HTML <span>{el.percentages[0]}%</span></article> <article className="project-percentages">CSS <span>{el.percentages[1]}%</span></article> <article className="project-percentages">JS <span>{el.percentages[2]}%</span></article></p></div>)}</div>
+        <div>{board.projects.map(el => <div className={"project-tile"}><p className={"project-title"} style={{background: this.props.titleProjects}}><a href={el.link} style={{color: this.props.anchor}}>{el.title}</a></p> <p className="project-content" style={{background: this.props.background, color: this.props.color}}><p>{el.description}</p> <article className="project-percentages">HTML <span>{el.percentages[0]}%</span></article> <article className="project-percentages">CSS <span>{el.percentages[1]}%</span></article> <article className="project-percentages">JS <span>{el.percentages[2]}%</span></article></p></div>)}</div>
       </div>
     );
   }
