@@ -323,7 +323,7 @@ class Projects extends React.Component {
 
     return (
       <div id={"projects"}>
-        <div>{board.projects.map(el => <div className={"project-tile"}><p className={"project-title"} style={{background: this.props.titleProjects}}><a href={el.link} style={{color: this.props.anchorProjects}}>{el.title}</a></p> <p className="project-content" style={{background: this.props.background, color: this.props.color}}><p>{el.description}</p> <article className="project-percentages">HTML <span>{el.percentages[0]}%</span></article> <article className="project-percentages">CSS <span>{el.percentages[1]}%</span></article> <article className="project-percentages">JS <span>{el.percentages[2]}%</span></article></p></div>)}</div>
+        <div>{board.projects.map(el => <div className={"project-tile"}><p className={"project-title"} style={{background: this.props.titleProjects}}><a href={el.link} style={{color: this.props.anchor}}>{el.title}</a></p> <p className="project-content" style={{background: this.props.background, color: this.props.color}}><p>{el.description}</p> <article className="project-percentages">HTML <span>{el.percentages[0]}%</span></article> <article className="project-percentages">CSS <span>{el.percentages[1]}%</span></article> <article className="project-percentages">JS <span>{el.percentages[2]}%</span></article></p></div>)}</div>
       </div>
     );
   }
