@@ -165,6 +165,10 @@ header {
 
   #navicon .item:nth-child(4) {
     grid-area: projects;
+  }
+
+  #navicon .item:nth-child(5) {
+    grid-area: skills;
 
 }
 
