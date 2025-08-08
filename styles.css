@@ -169,6 +169,11 @@ header {
 
   #navicon .item:nth-child(5) {
     grid-area: skills;
+  }
+
+  #navicon .item:nth-child(6) {
+    grid-area: empty;
+  }
 
 }
 
