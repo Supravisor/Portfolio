@@ -185,6 +185,7 @@ header {
 
   #navicon  {
     display: grid;
+    grid-template-columns: auto;
   }
 
 }
