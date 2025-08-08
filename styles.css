@@ -163,6 +163,9 @@ header {
     grid-area: experience;
   }
 
+  #navicon .item:nth-child(4) {
+    grid-area: projects;
+
 }
 
 @media (min-width: 340px) {
