@@ -159,6 +159,10 @@ header {
     grid-area: about;
   }
 
+  #navicon .item:nth-child(3) {
+    grid-area: experience;
+  }
+
 }
 
 @media (min-width: 340px) {
