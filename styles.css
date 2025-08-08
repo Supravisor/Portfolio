@@ -175,6 +175,15 @@ header {
     grid-area: empty;
   }
 
+  #navicon  {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "home about experience"
+      "projects skills empty";
+  }
+
 }
 
 @media (min-width: 340px) {
