@@ -142,13 +142,17 @@ header {
 
 }
 
-@media (min-width: 240px) {
+@media (min-width: 200px) {
 
   .grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
+  }
+
+  #navicon .item:nth-child(1) {
+    grid-area: home;
   }
 
 }
