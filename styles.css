@@ -142,13 +142,37 @@ header {
 
 }
 
-@media (min-width: 240px) {
+@media (min-width: 200px) {
 
   .grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
+  }
+
+  #navicon .item:nth-child(1) {
+    grid-area: home;
+  }
+
+  #navicon .item:nth-child(2) {
+    grid-area: about;
+  }
+
+  #navicon .item:nth-child(3) {
+    grid-area: experience;
+  }
+
+  #navicon .item:nth-child(4) {
+    grid-area: projects;
+  }
+
+  #navicon .item:nth-child(5) {
+    grid-area: skills;
+  }
+
+  #navicon .item:nth-child(6) {
+    grid-area: empty;
   }
 
 }
