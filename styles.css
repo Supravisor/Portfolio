@@ -155,6 +155,10 @@ header {
     grid-area: home;
   }
 
+  #navicon .item:nth-child(2) {
+    grid-area: about;
+  }
+
 }
 
 @media (min-width: 340px) {
