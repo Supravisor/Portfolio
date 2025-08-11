@@ -260,6 +260,10 @@ header {
       "projects skills empty";
   }
 
+  #navicon  {
+    display: flex;
+  }
+
 }
 
 @media (min-width: 580px) {
