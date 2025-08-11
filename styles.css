@@ -226,10 +226,6 @@ header {
     margin: 1em 3em 0em;
   }
 
-  #navicon  {
-    display: flex;
-  }
-
 }
 
 @media (min-width: 560px) {
@@ -262,6 +258,10 @@ header {
     grid-template-areas:
       "home about experience"
       "projects skills empty";
+  }
+
+  #navicon  {
+    display: flex;
   }
 
 }
