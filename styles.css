@@ -192,6 +192,10 @@ header {
     margin: 1em 1.5em 0em;
   }
 
+  #navicon  {
+    display: flex;
+  }
+
 }
 
 @media (min-width: 410px) {
