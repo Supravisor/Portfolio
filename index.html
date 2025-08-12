@@ -92,6 +92,13 @@ class Portfolio extends React.Component {
         borderSkills: "4px"
       }))
     }
+    if (event.target.id === "Contrast") {
+      this.setState(() => ({
+        contrast: "unset",
+        display: this.state.display,
+        icons: "hidden"
+      }))
+    }
   }  
   swapColours(event) {
     if (event.target.innerText === "light") {
