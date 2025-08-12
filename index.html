@@ -160,7 +160,7 @@ class Navbar extends React.Component {
     return (
       <nav>
 
-        <div id={"navbar"} onClick={this.props.switch} className={"grid"}>
+        <div id={"navbar"} onClick={this.props.switch} className={"grid"} style={{visibility: this.props.icons}}>
           <button className={"item"} style={{background: this.props.button, color: this.props.color, borderColor: this.props.color, borderWidth: this.props.borderHome}}>Home</button>
           <button className={"item"} style={{background: this.props.button, color: this.props.color, borderColor: this.props.color, borderWidth: this.props.borderAbout}}>About</button>
           <button className={"item"} style={{background: this.props.button, color: this.props.color, borderColor: this.props.color, borderWidth: this.props.borderExperience}}>Experience</button>
