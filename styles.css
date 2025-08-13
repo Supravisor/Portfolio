@@ -81,12 +81,6 @@ header {
 
 @media (min-width: 0px) {
 
-  #mode {
-    background: rgb(170, 170, 170);
-    border: 1px solid black;
-    padding: 1em;
-  }
-
   .item {
     margin: 1em 1em 0em;
   }
