@@ -277,6 +277,10 @@ header {
     height: 165px;
   }
 
+  .project-content > img {
+    width: 100%;
+  }
+
 }
 
 @media (min-width: 900px) {
