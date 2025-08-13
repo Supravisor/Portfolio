@@ -117,6 +117,10 @@ header {
     width: 90vw;
   }
 
+  .project-content > img {
+    width: 100%;
+  }
+
   #skills {
     display: flex;
     justify-content: space-evenly;
