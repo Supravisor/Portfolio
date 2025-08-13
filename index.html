@@ -303,8 +303,10 @@ class Projects extends React.Component {
   render() {
 
     class Project {
-      constructor(title, description, link, htm, css) {
+      constructor(title, image, imageAlt, description, link, htm, css) {
         this.title = title,
+        this.image = image,
+        this.imageAlt = imageAlt,
         this.description = description,
         this.link = "https://" + link,
         this.percentages = [htm, css, 100 - htm - css]
@@ -324,7 +326,7 @@ class Projects extends React.Component {
 
     let board = new ProjectBoard();
 
-    let symptomChecker = new Project("Symptom Checker", "Use the symptom checker to find the condition, disease, or health issue you may be experiencing.", "github.com/Supravisor/Symptom-Checker", 91, 3);
+    let symptomChecker = new Project("Symptom Checker", "https://github.com/Supravisor/Portfolio/blob/deploy/images/symptoms.png?raw=true", "screen grab of Symptom Checker web page", "Use the symptom checker to find the condition, disease, or health issue you may be experiencing.", "github.com/Supravisor/Symptom-Checker", 91, 3);
     board.add(symptomChecker);
 
     let gitpodForecast = new Project("Gitpod Forecast", "This app forecasts Gitpod usage availability for the next thirty days.", "github.com/Supravisor/Gitpod-Forecast", 13, 29);
@@ -335,7 +337,7 @@ class Projects extends React.Component {
 
     return (
       <div id={"projects"}>
-        <div>{board.projects.map(el => <div className={"project-tile"}><p className={"project-title"} style={{background: this.props.titleProjects}}><a href={el.link} style={{color: this.props.anchor}}>{el.title}</a></p> <p className="project-content" style={{background: this.props.background, color: this.props.color}}><p>{el.description}</p> <article className="project-percentages">HTML <span>{el.percentages[0]}%</span></article> <article className="project-percentages">CSS <span>{el.percentages[1]}%</span></article> <article className="project-percentages">JS <span>{el.percentages[2]}%</span></article></p></div>)}</div>
+        <div>{board.projects.map(el => <div className={"project-tile"}><p className={"project-title"} style={{background: this.props.titleProjects}}><a href={el.link} style={{color: this.props.anchor}}>{el.title}</a></p> <p className="project-content" style={{background: this.props.background, color: this.props.color}}><img src={el.image} /><p>{el.description}</p> <article className="project-percentages">HTML <span>{el.percentages[0]}%</span></article> <article className="project-percentages">CSS <span>{el.percentages[1]}%</span></article> <article className="project-percentages">JS <span>{el.percentages[2]}%</span></article></p></div>)}</div>
       </div>
     );
   }
