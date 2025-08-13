@@ -303,9 +303,10 @@ class Projects extends React.Component {
   render() {
 
     class Project {
-      constructor(title, image, description, link, htm, css) {
+      constructor(title, image, imageAlt, description, link, htm, css) {
         this.title = title,
         this.image = image,
+        this.imageAlt = imageAlt,
         this.description = description,
         this.link = "https://" + link,
         this.percentages = [htm, css, 100 - htm - css]
