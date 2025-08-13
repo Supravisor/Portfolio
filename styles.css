@@ -107,6 +107,7 @@ header {
     background: rgb(170, 170, 170);
     border: 1px solid black;
     padding: 1em;
+    width: 100vw;
   }
 
   .project-tile {
