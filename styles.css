@@ -273,10 +273,6 @@ header {
     height: 165px;
   }
 
-  #navbar {
-    width: calc(100vw - 120px);
-  }
-
 }
 
 @media (min-width: 900px) {
