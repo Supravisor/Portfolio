@@ -103,6 +103,10 @@ header {
     width: 1.5em;
   }
 
+  #mode {
+    background: rgb(170, 170, 170);
+  }
+
   .project-tile {
     width: 90vw;
   }
