@@ -85,6 +85,14 @@ header {
     margin: 1em 1em 0em;
   }
 
+  nav {
+    height: 165px;
+  }
+
+  #navbar  {
+    display: none;
+  }
+
   #navicon {
     position: fixed;
     bottom: 0;
@@ -265,6 +273,10 @@ header {
       "projects skills empty";
   }
 
+  #navbar  {
+    display: grid;
+  }
+
   #navicon  {
     display: flex;
   }
@@ -272,10 +284,6 @@ header {
 }
 
 @media (min-width: 580px) {
-
-  nav {
-    height: 165px;
-  }
 
   .project-content > img {
     width: 100%;
