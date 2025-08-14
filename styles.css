@@ -281,10 +281,6 @@ header {
 
 @media (min-width: 580px) {
 
-  nav {
-    height: 165px;
-  }
-
   .project-content > img {
     width: 100%;
   }
