@@ -85,6 +85,10 @@ header {
     margin: 1em 1em 0em;
   }
 
+  #navbar  {
+    display: none;
+  }
+
   #navicon {
     position: fixed;
     bottom: 0;
