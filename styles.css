@@ -85,6 +85,10 @@ header {
     margin: 1em 1em 0em;
   }
 
+  nav {
+    height: 165px;
+  }
+
   #navbar  {
     display: none;
   }
