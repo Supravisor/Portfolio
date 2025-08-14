@@ -269,6 +269,10 @@ header {
       "projects skills empty";
   }
 
+  #navbar  {
+    display: grid;
+  }
+
   #navicon  {
     display: flex;
   }
