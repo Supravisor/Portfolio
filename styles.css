@@ -291,9 +291,9 @@ header {
 
 }
 
-@media (min-width: 900px) {
+@media (min-width: 800px) {
 
-  .grid {
+  #navbar  {
     display: flex;
   }
 
