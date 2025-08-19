@@ -343,6 +343,9 @@ class Projects extends React.Component {
     let diffViewer = new Project("Diff Viewer", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/diffViewer.png", "screen grab of Diff Viewer web page", "This diff viewer overlays text and code so you can visualise the similarities and differences between the two sets.", "github.com/Supravisor/Diff-viewer", 26, 39);
     board.add(diffViewer);
 
+    let pythonConsole = new Project("Python console", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/Python.png", ""screen grab of Python console web page",  "A console for Python.", "github.com/Supravisor/Python_console", 95, 4);
+    board.add(pythonConsole);
+
     return (
       <div id={"projects"}>
         <div>{board.projects.map(el => <div className={"project-tile"}><p className={"project-title"} style={{background: this.props.titleProjects}}><a href={el.link} style={{color: this.props.anchor}}>{el.title}</a></p> <p className={"project-content"} style={{background: this.props.background, color: this.props.color}}><img src={el.image} alt={el.imageAlt} /><p>{el.description}</p> <article className={"project-percentages"}>HTML <span>{el.percentages[0]}%</span></article> <article className={"project-percentages"}>CSS <span>{el.percentages[1]}%</span></article> <article className={"project-percentages"}>JS <span>{el.percentages[2]}%</span></article></p></div>)}</div>
