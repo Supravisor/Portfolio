@@ -144,10 +144,10 @@ class Portfolio extends React.Component {
     body.style.color = this.state.color;
 
     return (
-  <div id="container">
+  <div id={"container"}>
     <Navbar switch={this.switchDisplay} swap={this.swapColours} button={this.state.button} color={this.state.color} borderHome={this.state.borderHome} borderAbout={this.state.borderAbout} borderExperience={this.state.borderExperience} borderProjects={this.state.borderProjects} borderSkills={this.state.borderSkills} icons={this.state.icons} contrast={this.state.contrast} mobileBar={this.state.mobileBar} />
 
-    <main id="content">
+    <main id={"content"}>
       <Content render={this.state.display} anchor={this.state.anchor} background={this.state.button} titleProjects={this.state.titleProjects} />
     </main>
 
