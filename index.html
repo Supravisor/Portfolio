@@ -188,7 +188,6 @@ class Navbar extends React.Component {
       </nav>
     );
   }
-
 };
     </script>
 
@@ -273,6 +272,49 @@ class About extends React.Component {
       <div id={"about"}>
         <p>Create engaging and purpose driven webpages.</p>
         <p>A moderator on the freeCodeCamp <a href="https://forum.freecodecamp.org/" style={{color: this.props.anchor}}>forum</a>, guiding aspiring web developers on how to code and grasp programming concepts.</p>
+          <ul>
+
+            <li>deal with flagged posts</li>
+              <ul>
+                <li>determine if flag is for a valid concern</li>
+                <li>take approriate measures when necessary</li>
+              </ul>
+
+            <li>delete user posts</li>
+              <ul>
+                <li>remove inapproriate posts</li>
+                <li>remove spam messages</li>
+              </ul>
+
+            <li>handle spam</li>
+              <ul>
+                <li>message user explaining the problem</li>
+                <li>silence user if the issue persists</li>
+                <li>issue user a warning for more serious situations</li>
+              </ul>
+
+            <li>deal with posted solutions</li>
+              <ul>
+                <li>if a poster replies with a solution</li>
+                <li>if the original poster seeks feedback on a solution</li>
+                <li>if the original poster is not seeking feedback for a posted solution</li>
+              </ul>
+
+            <li>handle off-topic and inappropriate conversations</li>
+              <ul>
+                <li>recategorise posts or topics if they appear in the wrong place</li>
+                <li>fork a discussion into multiple threads, or ask posters to create a new topic</li>
+                <li>if there are problems or questions raise them other moderators and staff</li>
+              </ul>
+
+            <li>other activities</li>
+              <ul>
+                <li>discuss how to respond to situations</li>
+                <li>create template responses</li>
+              </ul>
+
+          </ul>
+
       </div>
     );
   }
