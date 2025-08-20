@@ -391,6 +391,9 @@ class Projects extends React.Component {
     let npmCliConsole = new Project("npm CLI console", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/deploy/images/NpmCliConsole.png", "screen grab of npm cli console web page", "A console for node package manager command line interface (npm CLI)", "github.com/Supravisor/npm-cli-console.", 93, 6);
     board.add(npmCliConsole);
 
+    let reduxLegacyConsole = new Project("Redux legacy console", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/ReduxLegacyConsole.png", "screen grab of Redux legacy console web page", "A console for the legacy version of Redux.", "github.com/Supravisor/Redux-Legacy-Console",  84, 5);
+    board.add(reduxLegacyConsole);
+
     return (
       <div id={"projects"}>
         <div>{board.projects.map(el => <div className={"project-tile"}><p className={"project-title"} style={{background: this.props.titleProjects}}><a href={el.link} style={{color: this.props.anchor}}>{el.title}</a></p> <p className={"project-content"} style={{background: this.props.background, color: this.props.color}}><img src={el.image} alt={el.imageAlt} /><p>{el.description}</p> <article className={"project-percentages"}>HTML <span>{el.percentages[0]}%</span></article> <article className={"project-percentages"}>CSS <span>{el.percentages[1]}%</span></article> <article className={"project-percentages"}>JS <span>{el.percentages[2]}%</span></article></p></div>)}</div>
