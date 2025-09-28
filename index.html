@@ -33,6 +33,7 @@ class Portfolio extends React.Component {
       borderExperience: "2px",
       borderProjects: "2px",
       borderSkills: "2px",
+      imageBackground: "white",
       icons: "unset",
       contrast: "none",
       mobileBar: "gold",
@@ -109,6 +110,7 @@ class Portfolio extends React.Component {
         color: "black",
         mobileBar: "rgb(200, 200, 200)",
         titleProjects: "white",
+        imageBackground: "white",
         icons: "visible",
         contrast: "none"
       }));
@@ -121,6 +123,7 @@ class Portfolio extends React.Component {
         color: "black",
         mobileBar: "gold",
         titleProjects: "red",
+        imageBackground: "white",
         icons: "visible",
         contrast: "none"
       }));
@@ -133,6 +136,7 @@ class Portfolio extends React.Component {
         color: "white",
         mobileBar: "white",
         titleProjects: "black",
+        imageBackground: "grey",
         icons: "visible",
         contrast: "none"
       }));
@@ -148,7 +152,7 @@ class Portfolio extends React.Component {
     <Navbar switch={this.switchDisplay} swap={this.swapColours} button={this.state.button} color={this.state.color} borderHome={this.state.borderHome} borderAbout={this.state.borderAbout} borderExperience={this.state.borderExperience} borderProjects={this.state.borderProjects} borderSkills={this.state.borderSkills} icons={this.state.icons} contrast={this.state.contrast} mobileBar={this.state.mobileBar} />
 
     <main id={"content"}>
-      <Content render={this.state.display} anchor={this.state.anchor} background={this.state.button} titleProjects={this.state.titleProjects} />
+      <Content render={this.state.display} anchor={this.state.anchor} background={this.state.button} titleProjects={this.state.titleProjects} imageBackground={this.state.imageBackground} />
     </main>
 
   </div>
@@ -237,7 +241,7 @@ class Content extends React.Component {
         break;
       case "Skills":
         return (
-          <Skills background={this.props.background} />
+          <Skills background={this.props.background} imageBackground={this.props.imageBackground} />
         );
         break;
     }
@@ -415,28 +419,28 @@ class Skills extends React.Component {
     return (
       <div id={"skills"}>
 
-        <div className={"skills-image"} style={{background: this.props.background}}>
+        <div className={"skills-image"} style={{background: this.props.imageBackground}}>
           <figure>
             <img src={"https://raw.githubusercontent.com/Supravisor/Portfolio/8b4ae668c640362c2d1777ab9c75a227826b2d04/images/html-5.svg"} alt={"Hyper Text Markup Language 5 logo"} />
               <figcaption>HyperText Markup Language</figcaption>
           </figure>
         </div>
 
-        <div className={"skills-image"} style={{background: this.props.background}}>
+        <div className={"skills-image"} style={{background: this.props.imageBackground}}>
           <figure>
             <img src={"https://raw.githubusercontent.com/Supravisor/Portfolio/b975525aae997d60eee392c252ff56fbf8afdee0/images/css-3.svg"} alt={"Cascading Style Sheet logo"} />
               <figcaption>Cascading Style Sheet</figcaption>
           </figure>
         </div>
 
-        <div className={"skills-image"} style={{background: this.props.background}}>
+        <div className={"skills-image"} style={{background: this.props.imageBackground}}>
           <figure>
             <img src={"https://raw.githubusercontent.com/Supravisor/Portfolio/28eeb7729b0acc7a5de0c186f747ce2d96a211de/images/javascript-logo.svg"} alt={"JavaScript logo"} />
               <figcaption>JavaScript</figcaption>
           </figure>
         </div>
 
-        <div className={"skills-image"} style={{background: this.props.background}}>
+        <div className={"skills-image"} style={{background: this.props.imageBackground}}>
           <figure>
             <img src={"https://raw.githubusercontent.com/Supravisor/Portfolio/da89b04bcc07951c70c60d711e3b1801798de1d5/images/react.svg"} alt={"React logo"} />
               <figcaption>React</figcaption>
