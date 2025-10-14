@@ -276,6 +276,11 @@ header {
     display: flex;
   }
 
+  .project-tile {
+    min-width: 400px;
+    max-width: 500px;
+  }
+
 }
 
 @media (min-width: 580px) {
