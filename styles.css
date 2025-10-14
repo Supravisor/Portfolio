@@ -9,6 +9,10 @@ nav {
   padding-top: 1em;
 }
 
+#navbar .item {
+  padding: 0.75em;
+}
+
 #welcome {
   display: table;
   display: table-cell;
@@ -219,7 +223,6 @@ header {
 @media (min-width: 450px) {
 
   .item {
-    padding: 0.5em;
     margin: 1em 3em 0em;
   }
 
