@@ -125,10 +125,6 @@ header {
     width: 100vw;
   }
 
-  .project-tile {
-    width: 90vw;
-  }
-
   .project-content > img {
     display: none;
   }
