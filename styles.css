@@ -59,7 +59,6 @@ header {
 }
 
 .project-title {
-  width: calc(100% - 2em - 4px);
   border-top: 2px solid grey;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -124,10 +123,6 @@ header {
     position: fixed;
     top: 0;
     width: 100vw;
-  }
-
-  .project-tile {
-    width: 90vw;
   }
 
   .project-content > img {
@@ -231,11 +226,6 @@ header {
     display: flex;
   }
 
-  .project-tile {
-    min-width: 400px;
-    max-width: 500px;
-  }
-
 }
 
 @media (min-width: 520px) {
@@ -284,6 +274,11 @@ header {
 
   #navicon  {
     display: flex;
+  }
+
+  .project-tile {
+    min-width: 400px;
+    max-width: 500px;
   }
 
 }
