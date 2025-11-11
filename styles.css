@@ -224,7 +224,7 @@ header {
     padding: 0.75em;
   }
 
-  .grid {
+  #navbar {
     display: flex;
   }
 
