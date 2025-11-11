@@ -109,6 +109,8 @@ header {
 
   #navicon .icon {
     margin: 0.5em 1em 0.5em;
+    width: 44px;
+    height: 44px;
   }
 
   #navicon img {
@@ -222,10 +224,6 @@ header {
     padding: 0.75em;
   }
 
-  .grid {
-    display: flex;
-  }
-
 }
 
 @media (min-width: 520px) {
@@ -238,26 +236,31 @@ header {
 
 @media (min-width: 560px) {
 
-  .grid .item:nth-child(1) {
+  #navbar .item:nth-child(1) {
     grid-area: home;
   }
-  .grid .item:nth-child(2) {
+
+  #navbar .item:nth-child(2) {
     grid-area: about;
   }
-  .grid .item:nth-child(3) {
+
+  #navbar .item:nth-child(3) {
     grid-area: experience;
   }
-  .grid .item:nth-child(4) {
+
+  #navbar .item:nth-child(4) {
     grid-area: projects;
   }
-  .grid .item:nth-child(5) {
+
+  #navbar .item:nth-child(5) {
     grid-area: skills;
   }
-  .grid .item:nth-child(6) {
+
+  #navbar .item:nth-child(6) {
     grid-area: empty;
   }
 
-  .grid {
+  #navbar {
     display: grid;
     gap: 1.5vh;
     padding: 1vh;
@@ -266,10 +269,6 @@ header {
     grid-template-areas:
       "home about experience"
       "projects skills empty";
-  }
-
-  #navbar  {
-    display: grid;
   }
 
   #navicon  {
