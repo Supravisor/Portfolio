@@ -401,6 +401,9 @@ class Projects extends React.Component {
     let perpetualCalendar = new Project("Perpetual calendar", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/PerpetualCalendar.jpeg", "screen grab of Perpetual calendar web page", "This is a perpetual twelve month calendar. It can show the previous month, the current month, and the next ten months from the current month.", "github.com/Supravisor/Perpetual-calendar",  2, 6);
     board.add(perpetualCalendar);
 
+    let toDoApp = new Project("Todo app", "Todoable.png", "screen grab of Todoable web page", "A todo app to list daily and weekly tasks.", "github.com/Supravisor/Todoable",  68, 21);
+    board.add(toDoApp);
+
     return (
       <div id={"projects"}>
         <div>{board.projects.map(el => <div className={"project-tile"}><p className={"project-title"} style={{background: this.props.titleProjects}}><a href={el.link} style={{color: this.props.anchor}}>{el.title}</a></p> <p className={"project-content"} style={{background: this.props.background, color: this.props.color}}><img src={el.image} alt={el.imageAlt} /><p>{el.description}</p> <article className={"project-percentages"}>HTML <span>{el.percentages[0]}%</span></article> <article className={"project-percentages"}>CSS <span>{el.percentages[1]}%</span></article> <article className={"project-percentages"}>JS <span>{el.percentages[2]}%</span></article></p></div>)}</div>
