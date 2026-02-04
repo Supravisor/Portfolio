@@ -407,6 +407,9 @@ class Projects extends React.Component {
     let pseudoku = new Project("Pseudoku", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/Pseudoku.png", "screen grab of Pseudoku puzzle", "A Sudoku like puzzle.", "github.com/Supravisor/Pseudoku",  14, 6);
     board.add(pseudoku);
 
+    let jupyterNotebook = new Project("Jupyter Notebook console", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/JupyterNotebook.png", "screen grab of Jupyter Notebook console", "A console for Jupyter Notebook.", "github.com/Supravisor/JupyterNotebook",  33, 3);
+    board.add(jupyterNotebook);
+
     return (
       <div id={"projects"}>
         <div>{board.projects.map(el => <div className={"project-tile"}><p className={"project-title"} style={{background: this.props.titleProjects}}><a href={el.link} style={{color: this.props.anchor}}>{el.title}</a></p> <p className={"project-content"} style={{background: this.props.background, color: this.props.color}}><img src={el.image} alt={el.imageAlt} /><p>{el.description}</p> <article className={"project-percentages"}>HTML <span>{el.percentages[0]}%</span></article> <article className={"project-percentages"}>CSS <span>{el.percentages[1]}%</span></article> <article className={"project-percentages"}>JS <span>{el.percentages[2]}%</span></article></p></div>)}</div>
