@@ -413,6 +413,9 @@ class Projects extends React.Component {
     let numPyArray = new Project("NumPy array console", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/NumPyArray.png", "screen grab of NumPy array console", "A console for NumPy array.", "github.com/Supravisor/NumPyArray",  31, 3);
     board.add(numPyArray);
 
+    let pandasSeries = new Project("Pandas (Series) console", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/PandasSeries.png", "screen grab of Pandas (Series) console", "A console for Pandas (Series).", "github.com/Supravisor/Pandas-Series-console",  33, 3);
+    board.add(pandasSeries);
+
     return (
       <div id={"projects"}>
         <div>{board.projects.map(el => <div className={"project-tile"}><p className={"project-title"} style={{background: this.props.titleProjects}}><a href={el.link} style={{color: this.props.anchor}}>{el.title}</a></p> <p className={"project-content"} style={{background: this.props.background, color: this.props.color}}><img src={el.image} alt={el.imageAlt} /><p>{el.description}</p> <article className={"project-percentages"}>HTML <span>{el.percentages[0]}%</span></article> <article className={"project-percentages"}>CSS <span>{el.percentages[1]}%</span></article> <article className={"project-percentages"}>JS <span>{el.percentages[2]}%</span></article></p></div>)}</div>
