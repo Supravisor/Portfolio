@@ -434,6 +434,9 @@ class Projects extends React.Component {
     let readParseHtmlTable = new Project("Read and parse HTML table console", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/ReadParseHtmlTable.png", "screen grab of Read and parse HTML table console", "This is a console for Data Analysis with Python that allows the user to generate code for basic reading and parsing data from HTML tables.", "github.com/Supravisor/Parse_HTML_table",  43, 20);
     board.add(readParseHtmlTable);
 
+    let tensorFlow1 = new Project("TensorFlow 2.0 console", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/TensorFlow1.png", "screen grab of TensorFlow 2.0 console", "This is a console for TensorFlow 2.0 to generate code for creating, viewing, and modifying Tensors.", "github.com/Supravisor/TensorFlow_1",  30, 11);
+    board.add(tensorFlow1);
+
     return (
       <div id={"projects"}>
         <div>{board.projects.map(el => <div className={"project-tile"}><p className={"project-title"} style={{background: this.props.titleProjects}}><a href={el.link} style={{color: this.props.anchor}}>{el.title}</a></p> <p className={"project-content"} style={{background: this.props.background, color: this.props.color}}><img src={el.image} alt={el.imageAlt} /><p>{el.description}</p> <article className={"project-percentages"}>HTML <span>{el.percentages[0]}%</span></article> <article className={"project-percentages"}>CSS <span>{el.percentages[1]}%</span></article> <article className={"project-percentages"}>JS <span>{el.percentages[2]}%</span></article></p></div>)}</div>
