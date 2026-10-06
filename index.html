@@ -179,12 +179,12 @@ class Navbar extends React.Component {
         </div>
 
         <div id={"navicon"} onClick={this.props.switch} style={{background: this.props.mobileBar, visibility: this.props.icons}}>
-          <img className={"icon"} src={"https://raw.githubusercontent.com/Supravisor/Portfolio/7461c529a0dc944ce64af086c578e98faf56f73b/images/projects/home.svg"} alt={"home icon"} id={"Home"} />
-          <img className={"icon"} src={"https://raw.githubusercontent.com/Supravisor/Portfolio/023969ea1e50ed73b51cef9467758d14ebec67bc/images/projects/user.svg"} alt={"user icon"} id={"About"} />
-          <img className={"icon"} src={"https://raw.githubusercontent.com/Supravisor/Portfolio/79cc5d99fc7b5a003f08509a6605963af6e6efd8/images/projects/briefcase.svg"} alt={"briefcase icon"} id={"Experience"} />
-          <img className={"icon"} src={"https://raw.githubusercontent.com/Supravisor/Portfolio/0d0dcce87e28d785cb578bedf82b75a577171dcc/images/projects/folder.svg"} alt={"folder icon"} id={"Projects"} />
-          <img className={"icon"} src={"https://raw.githubusercontent.com/Supravisor/Portfolio/6482bbc9da7d8c0931ae2d71e706efe5ad232d6e/images/projects/code.svg"} alt={"code icon"} id={"Skills"} />
-          <img className={"icon"} src={"https://raw.githubusercontent.com/Supravisor/Portfolio/ee6bc54a04776e8310841aac49f32258a434e62e/images/projects/contrast.svg"} alt={"constrast icon"} id={"Contrast"} />
+          <img className={"icon"} src={"https://raw.githubusercontent.com/Supravisor/Portfolio/7461c529a0dc944ce64af086c578e98faf56f73b/images/icons/home.svg"} alt={"home icon"} id={"Home"} />
+          <img className={"icon"} src={"https://raw.githubusercontent.com/Supravisor/Portfolio/023969ea1e50ed73b51cef9467758d14ebec67bc/images/icons/user.svg"} alt={"user icon"} id={"About"} />
+          <img className={"icon"} src={"https://raw.githubusercontent.com/Supravisor/Portfolio/79cc5d99fc7b5a003f08509a6605963af6e6efd8/images/icons/briefcase.svg"} alt={"briefcase icon"} id={"Experience"} />
+          <img className={"icon"} src={"https://raw.githubusercontent.com/Supravisor/Portfolio/0d0dcce87e28d785cb578bedf82b75a577171dcc/images/icons/folder.svg"} alt={"folder icon"} id={"Projects"} />
+          <img className={"icon"} src={"https://raw.githubusercontent.com/Supravisor/Portfolio/6482bbc9da7d8c0931ae2d71e706efe5ad232d6e/images/icons/code.svg"} alt={"code icon"} id={"Skills"} />
+          <img className={"icon"} src={"https://raw.githubusercontent.com/Supravisor/Portfolio/ee6bc54a04776e8310841aac49f32258a434e62e/images/icons/contrast.svg"} alt={"constrast icon"} id={"Contrast"} />
         </div>
 
         <Mode swap={this.props.swap} contrast={this.props.contrast} />
@@ -380,7 +380,7 @@ class Projects extends React.Component {
 
     let board = new ProjectBoard();
 
-    let symptomChecker = new Project("Symptom Checker", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/projects/projects/Symptoms.png", "screen grab of Symptom Checker web page", "Use the symptom checker to find the condition, disease, or health issue you may be experiencing.", "github.com/Supravisor/Symptom-Checker", 91, 3);
+    let symptomChecker = new Project("Symptom Checker", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/projects/Symptoms.png", "screen grab of Symptom Checker web page", "Use the symptom checker to find the condition, disease, or health issue you may be experiencing.", "github.com/Supravisor/Symptom-Checker", 91, 3);
     board.add(symptomChecker);
 
     let gitpodForecast = new Project("Gitpod forecast", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/projects/Gitpod.png", "screen grab of Gitpod forecast web page", "This app forecasts Gitpod usage availability for the next thirty days.", "github.com/Supravisor/Gitpod-Forecast", 13, 29);
