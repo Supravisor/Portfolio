@@ -179,12 +179,12 @@ class Navbar extends React.Component {
         </div>
 
         <div id={"navicon"} onClick={this.props.switch} style={{background: this.props.mobileBar, visibility: this.props.icons}}>
-          <img className={"icon"} src={"https://raw.githubusercontent.com/Supravisor/Portfolio/7461c529a0dc944ce64af086c578e98faf56f73b/images/home.svg"} alt={"home icon"} id={"Home"} />
-          <img className={"icon"} src={"https://raw.githubusercontent.com/Supravisor/Portfolio/023969ea1e50ed73b51cef9467758d14ebec67bc/images/user.svg"} alt={"user icon"} id={"About"} />
-          <img className={"icon"} src={"https://raw.githubusercontent.com/Supravisor/Portfolio/79cc5d99fc7b5a003f08509a6605963af6e6efd8/images/briefcase.svg"} alt={"briefcase icon"} id={"Experience"} />
-          <img className={"icon"} src={"https://raw.githubusercontent.com/Supravisor/Portfolio/0d0dcce87e28d785cb578bedf82b75a577171dcc/images/folder.svg"} alt={"folder icon"} id={"Projects"} />
-          <img className={"icon"} src={"https://raw.githubusercontent.com/Supravisor/Portfolio/6482bbc9da7d8c0931ae2d71e706efe5ad232d6e/images/code.svg"} alt={"code icon"} id={"Skills"} />
-          <img className={"icon"} src={"https://raw.githubusercontent.com/Supravisor/Portfolio/ee6bc54a04776e8310841aac49f32258a434e62e/images/contrast.svg"} alt={"constrast icon"} id={"Contrast"} />
+          <img className={"icon"} src={"https://raw.githubusercontent.com/Supravisor/Portfolio/7461c529a0dc944ce64af086c578e98faf56f73b/images/projects/home.svg"} alt={"home icon"} id={"Home"} />
+          <img className={"icon"} src={"https://raw.githubusercontent.com/Supravisor/Portfolio/023969ea1e50ed73b51cef9467758d14ebec67bc/images/projects/user.svg"} alt={"user icon"} id={"About"} />
+          <img className={"icon"} src={"https://raw.githubusercontent.com/Supravisor/Portfolio/79cc5d99fc7b5a003f08509a6605963af6e6efd8/images/projects/briefcase.svg"} alt={"briefcase icon"} id={"Experience"} />
+          <img className={"icon"} src={"https://raw.githubusercontent.com/Supravisor/Portfolio/0d0dcce87e28d785cb578bedf82b75a577171dcc/images/projects/folder.svg"} alt={"folder icon"} id={"Projects"} />
+          <img className={"icon"} src={"https://raw.githubusercontent.com/Supravisor/Portfolio/6482bbc9da7d8c0931ae2d71e706efe5ad232d6e/images/projects/code.svg"} alt={"code icon"} id={"Skills"} />
+          <img className={"icon"} src={"https://raw.githubusercontent.com/Supravisor/Portfolio/ee6bc54a04776e8310841aac49f32258a434e62e/images/projects/contrast.svg"} alt={"constrast icon"} id={"Contrast"} />
         </div>
 
         <Mode swap={this.props.swap} contrast={this.props.contrast} />
@@ -380,61 +380,61 @@ class Projects extends React.Component {
 
     let board = new ProjectBoard();
 
-    let symptomChecker = new Project("Symptom Checker", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/projects/Symptoms.png", "screen grab of Symptom Checker web page", "Use the symptom checker to find the condition, disease, or health issue you may be experiencing.", "github.com/Supravisor/Symptom-Checker", 91, 3);
+    let symptomChecker = new Project("Symptom Checker", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/projects/projects/Symptoms.png", "screen grab of Symptom Checker web page", "Use the symptom checker to find the condition, disease, or health issue you may be experiencing.", "github.com/Supravisor/Symptom-Checker", 91, 3);
     board.add(symptomChecker);
 
-    let gitpodForecast = new Project("Gitpod forecast", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/Gitpod.png", "screen grab of Gitpod forecast web page", "This app forecasts Gitpod usage availability for the next thirty days.", "github.com/Supravisor/Gitpod-Forecast", 13, 29);
+    let gitpodForecast = new Project("Gitpod forecast", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/projects/Gitpod.png", "screen grab of Gitpod forecast web page", "This app forecasts Gitpod usage availability for the next thirty days.", "github.com/Supravisor/Gitpod-Forecast", 13, 29);
     board.add(gitpodForecast);
 
-    let diffViewer = new Project("Diff Viewer", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/DiffViewer.png", "screen grab of Diff Viewer web page", "This diff viewer overlays text and code so you can visualise the similarities and differences between the two sets.", "github.com/Supravisor/Diff-viewer", 26, 39);
+    let diffViewer = new Project("Diff Viewer", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/projects/DiffViewer.png", "screen grab of Diff Viewer web page", "This diff viewer overlays text and code so you can visualise the similarities and differences between the two sets.", "github.com/Supravisor/Diff-viewer", 26, 39);
     board.add(diffViewer);
 
-    let pythonConsole = new Project("Python console", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/Python.png", "screen grab of Python console web page",  "A console for Python.", "github.com/Supravisor/Python_console", 95, 4);
+    let pythonConsole = new Project("Python console", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/projects/Python.png", "screen grab of Python console web page",  "A console for Python.", "github.com/Supravisor/Python_console", 95, 4);
     board.add(pythonConsole);
 
-    let npmCliConsole = new Project("npm CLI console", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/deploy/images/NpmCliConsole.png", "screen grab of npm cli console web page", "A console for node package manager command line interface (npm CLI)", "github.com/Supravisor/npm-cli-console.", 93, 6);
+    let npmCliConsole = new Project("npm CLI console", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/projects/NpmCliConsole.png", "screen grab of npm cli console web page", "A console for node package manager command line interface (npm CLI)", "github.com/Supravisor/npm-cli-console.", 93, 6);
     board.add(npmCliConsole);
 
-    let reduxLegacyConsole = new Project("Redux legacy console", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/ReduxLegacyConsole.png", "screen grab of Redux legacy console web page", "A console for the legacy version of Redux.", "github.com/Supravisor/Redux-Legacy-Console",  84, 5);
+    let reduxLegacyConsole = new Project("Redux legacy console", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/projects/ReduxLegacyConsole.png", "screen grab of Redux legacy console web page", "A console for the legacy version of Redux.", "github.com/Supravisor/Redux-Legacy-Console",  84, 5);
     board.add(reduxLegacyConsole);
 
-    let perpetualCalendar = new Project("Perpetual calendar", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/PerpetualCalendar.jpeg", "screen grab of Perpetual calendar web page", "This is a perpetual twelve month calendar. It can show the previous month, the current month, and the next ten months from the current month.", "github.com/Supravisor/Perpetual-calendar",  2, 6);
+    let perpetualCalendar = new Project("Perpetual calendar", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/projects/PerpetualCalendar.jpeg", "screen grab of Perpetual calendar web page", "This is a perpetual twelve month calendar. It can show the previous month, the current month, and the next ten months from the current month.", "github.com/Supravisor/Perpetual-calendar",  2, 6);
     board.add(perpetualCalendar);
 
-    let toDoApp = new Project("Todo app", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/Todoable.png", "screen grab of Todoable web page", "A todo app to list daily and weekly tasks.", "github.com/Supravisor/Todoable",  68, 21);
+    let toDoApp = new Project("Todo app", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/projects/Todoable.png", "screen grab of Todoable web page", "A todo app to list daily and weekly tasks.", "github.com/Supravisor/Todoable",  68, 21);
     board.add(toDoApp);
 
-    let pseudoku = new Project("Pseudoku", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/Pseudoku.png", "screen grab of Pseudoku puzzle", "A Sudoku like puzzle.", "github.com/Supravisor/Pseudoku",  14, 6);
+    let pseudoku = new Project("Pseudoku", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/projects/Pseudoku.png", "screen grab of Pseudoku puzzle", "A Sudoku like puzzle.", "github.com/Supravisor/Pseudoku",  14, 6);
     board.add(pseudoku);
 
-    let jupyterNotebook = new Project("Jupyter Notebook console", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/JupyterNotebook.png", "screen grab of Jupyter Notebook console", "A console for Jupyter Notebook.", "github.com/Supravisor/JupyterNotebook",  33, 3);
+    let jupyterNotebook = new Project("Jupyter Notebook console", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/projects/JupyterNotebook.png", "screen grab of Jupyter Notebook console", "A console for Jupyter Notebook.", "github.com/Supravisor/JupyterNotebook",  33, 3);
     board.add(jupyterNotebook);
 
-    let numPyArray = new Project("NumPy array console", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/NumPyArray.png", "screen grab of NumPy array console", "A console for NumPy array.", "github.com/Supravisor/NumPyArray",  31, 3);
+    let numPyArray = new Project("NumPy array console", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/projects/NumPyArray.png", "screen grab of NumPy array console", "A console for NumPy array.", "github.com/Supravisor/NumPyArray",  31, 3);
     board.add(numPyArray);
 
-    let pandasSeries = new Project("Pandas (Series) console", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/PandasSeries.png", "screen grab of Pandas (Series) console", "A console for Pandas (Series).", "github.com/Supravisor/Pandas-Series-console",  33, 3);
+    let pandasSeries = new Project("Pandas (Series) console", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/projects/PandasSeries.png", "screen grab of Pandas (Series) console", "A console for Pandas (Series).", "github.com/Supravisor/Pandas-Series-console",  33, 3);
     board.add(pandasSeries);
 
-    let pandasDataFrame = new Project("Pandas (DataFrames) console", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/PandasDataFrames.png", "screen grab of Pandas (DataFrames) console", "A console for Pandas (DataFrames).", "github.com/Supravisor/Pandas-DataFrames-console",  72, 2);
+    let pandasDataFrame = new Project("Pandas (DataFrames) console", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/projects/PandasDataFrames.png", "screen grab of Pandas (DataFrames) console", "A console for Pandas (DataFrames).", "github.com/Supravisor/Pandas-DataFrames-console",  72, 2);
     board.add(pandasDataFrame);
 
-    let pandasDataCleaning1 = new Project("Pandas Data Cleaning 1 console", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/PandasDataCleaning1.png", "screen grab of Pandas Data Cleaning 1 console", "A console for Pandas Data Cleaning 1.", "github.com/Supravisor/Pandas-Data-Cleaning-1",  42, 9);
+    let pandasDataCleaning1 = new Project("Pandas Data Cleaning 1 console", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/projects/PandasDataCleaning1.png", "screen grab of Pandas Data Cleaning 1 console", "A console for Pandas Data Cleaning 1.", "github.com/Supravisor/Pandas-Data-Cleaning-1",  42, 9);
     board.add(pandasDataCleaning1);
 
-    let pandasDataCleaning2 = new Project("Pandas Data Cleaning 2 console", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/PandasDataCleaning2.png", "screen grab of Pandas Data Cleaning 2 console", "A console for Pandas Data Cleaning 2.", "github.com/Supravisor/Pandas-Data-Cleaning-2",  31, 8);
+    let pandasDataCleaning2 = new Project("Pandas Data Cleaning 2 console", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/projects/PandasDataCleaning2.png", "screen grab of Pandas Data Cleaning 2 console", "A console for Pandas Data Cleaning 2.", "github.com/Supravisor/Pandas-Data-Cleaning-2",  31, 8);
     board.add(pandasDataCleaning2);
 
-    let pandasDataCleaning3 = new Project("Pandas Data Cleaning 3 console", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/PandasDataCleaning3.png", "screen grab of Pandas Data Cleaning 3 console", "A console for Pandas Data Cleaning 3.", "github.com/Supravisor/Pandas-Data-Cleaning-3",  39, 9);
+    let pandasDataCleaning3 = new Project("Pandas Data Cleaning 3 console", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/projects/PandasDataCleaning3.png", "screen grab of Pandas Data Cleaning 3 console", "A console for Pandas Data Cleaning 3.", "github.com/Supravisor/Pandas-Data-Cleaning-3",  39, 9);
     board.add(pandasDataCleaning3);
 
-    let relationalDatabases1 = new Project("Relational Databases 1 console", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/RelationalDatabases1.png", "screen grab of Relational Databases 1 console", "A console for Relational Databases 1.", "github.com/Supravisor/Relational_Databases_1",  48, 11);
+    let relationalDatabases1 = new Project("Relational Databases 1 console", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/projects/RelationalDatabases1.png", "screen grab of Relational Databases 1 console", "A console for Relational Databases 1.", "github.com/Supravisor/Relational_Databases_1",  48, 11);
     board.add(relationalDatabases1);
 
-    let readParseHtmlTable = new Project("Read and parse HTML table console", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/ReadParseHtmlTable.png", "screen grab of Read and parse HTML table console", "This is a console for Data Analysis with Python that allows the user to generate code for basic reading and parsing data from HTML tables.", "github.com/Supravisor/Parse_HTML_table",  43, 20);
+    let readParseHtmlTable = new Project("Read and parse HTML table console", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/projects/ReadParseHtmlTable.png", "screen grab of Read and parse HTML table console", "This is a console for Data Analysis with Python that allows the user to generate code for basic reading and parsing data from HTML tables.", "github.com/Supravisor/Parse_HTML_table",  43, 20);
     board.add(readParseHtmlTable);
 
-    let tensorFlow1 = new Project("TensorFlow 2.0 console", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/TensorFlow1.png", "screen grab of TensorFlow 2.0 console", "This is a console for TensorFlow 2.0 to generate code for creating, viewing, and modifying Tensors.", "github.com/Supravisor/TensorFlow_1",  30, 11);
+    let tensorFlow1 = new Project("TensorFlow 2.0 console", "https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/projects/TensorFlow1.png", "screen grab of TensorFlow 2.0 console", "This is a console for TensorFlow 2.0 to generate code for creating, viewing, and modifying Tensors.", "github.com/Supravisor/TensorFlow_1",  30, 11);
     board.add(tensorFlow1);
 
     return (
@@ -457,28 +457,28 @@ class Skills extends React.Component {
 
         <div className={"skills-image"} style={{background: this.props.imageBackground}}>
           <figure>
-            <img src={"https://raw.githubusercontent.com/Supravisor/Portfolio/8b4ae668c640362c2d1777ab9c75a227826b2d04/images/html-5.svg"} alt={"Hyper Text Markup Language 5 logo"} />
+            <img src={"https://raw.githubusercontent.com/Supravisor/Portfolio/8b4ae668c640362c2d1777ab9c75a227826b2d04/images/projects/html-5.svg"} alt={"Hyper Text Markup Language 5 logo"} />
               <figcaption>HyperText Markup Language</figcaption>
           </figure>
         </div>
 
         <div className={"skills-image"} style={{background: this.props.imageBackground}}>
           <figure>
-            <img src={"https://raw.githubusercontent.com/Supravisor/Portfolio/b975525aae997d60eee392c252ff56fbf8afdee0/images/css-3.svg"} alt={"Cascading Style Sheet logo"} />
+            <img src={"https://raw.githubusercontent.com/Supravisor/Portfolio/b975525aae997d60eee392c252ff56fbf8afdee0/images/projects/css-3.svg"} alt={"Cascading Style Sheet logo"} />
               <figcaption>Cascading Style Sheet</figcaption>
           </figure>
         </div>
 
         <div className={"skills-image"} style={{background: this.props.imageBackground}}>
           <figure>
-            <img src={"https://raw.githubusercontent.com/Supravisor/Portfolio/28eeb7729b0acc7a5de0c186f747ce2d96a211de/images/javascript-logo.svg"} alt={"JavaScript logo"} />
+            <img src={"https://raw.githubusercontent.com/Supravisor/Portfolio/28eeb7729b0acc7a5de0c186f747ce2d96a211de/images/projects/javascript-logo.svg"} alt={"JavaScript logo"} />
               <figcaption>JavaScript</figcaption>
           </figure>
         </div>
 
         <div className={"skills-image"} style={{background: this.props.imageBackground}}>
           <figure>
-            <img src={"https://raw.githubusercontent.com/Supravisor/Portfolio/da89b04bcc07951c70c60d711e3b1801798de1d5/images/react.svg"} alt={"React logo"} />
+            <img src={"https://raw.githubusercontent.com/Supravisor/Portfolio/da89b04bcc07951c70c60d711e3b1801798de1d5/images/projects/react.svg"} alt={"React logo"} />
               <figcaption>React</figcaption>
           </figure>
         </div>
