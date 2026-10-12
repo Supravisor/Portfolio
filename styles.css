@@ -291,7 +291,7 @@ header {
 
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
 
   #navbar  {
     display: flex;
