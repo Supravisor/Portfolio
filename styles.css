@@ -291,10 +291,15 @@ header {
 
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
 
   #navbar  {
     display: flex;
+  }
+
+  .skills-image {
+    margin-left: 50px;
+    margin-right: 50px;
   }
 
 }
