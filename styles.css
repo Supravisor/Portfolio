@@ -305,6 +305,11 @@ header {
 
 @media (min-width: 900px) {
 
+  .skills-image {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
 }
 
 @media (min-width: 1150px) {
