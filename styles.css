@@ -53,6 +53,10 @@ header {
   margin-right: 2em;
 }
 
+.indent {
+  margin-left: 22px;
+}
+
 .project-tile {
   margin-left: auto;
   margin-right: auto;
