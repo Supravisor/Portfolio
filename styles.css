@@ -53,6 +53,10 @@ header {
   margin-right: 2em;
 }
 
+h2 {
+  text-align: center;
+}
+
 .indent {
   margin-left: 22px;
 }
