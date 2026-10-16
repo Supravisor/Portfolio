@@ -53,6 +53,10 @@ header {
   margin-right: 2em;
 }
 
+h2 {
+  text-align: center;
+}
+
 .indent {
   margin-left: 22px;
 }
@@ -133,12 +137,6 @@ header {
 
   .project-content > img {
     display: none;
-  }
-
-  #skills {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
   }
 
   #navbar img {
