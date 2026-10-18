@@ -144,6 +144,12 @@ h2 {
     margin-left: calc(50% - 75px);
   }
 
+  #front {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
   figure img {
     max-width: 150px;
     margin-left: calc(50% - 75px);
