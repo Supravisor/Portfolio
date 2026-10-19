@@ -493,9 +493,14 @@ class Skills extends React.Component {
         </div>
 
         <h2>Back end</h2>
-          <div id="back">
-            
+        <div id="back">
+          <div className={"skills-image"} style={{background: this.props.imageBackground}}>
+            <figure>
+              <img src={"https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/deploy/images/skills/nodejsStackedBlack.svg"} alt={"Node.js logo"} />
+                <figcaption>Node.js</figcaption>
+            </figure>
           </div>
+        </div>
       </div>
     );
   }
