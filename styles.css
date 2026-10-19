@@ -144,7 +144,7 @@ h2 {
     margin-left: calc(50% - 75px);
   }
 
-  #front {
+  #front, #back {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
