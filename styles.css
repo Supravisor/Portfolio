@@ -53,14 +53,6 @@ header {
   margin-right: 2em;
 }
 
-h2 {
-  text-align: center;
-}
-
-.indent {
-  margin-left: 22px;
-}
-
 .project-tile {
   margin-left: auto;
   margin-right: auto;
@@ -89,6 +81,18 @@ h2 {
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+
+h2 {
+  text-align: center;
+}
+
+.indent {
+  margin-left: 22px;
+}
+
+#node {
+  padding-top: 42px;
 }
 
 @media (min-width: 0px) {
