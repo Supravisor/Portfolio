@@ -95,6 +95,10 @@ h2 {
   padding-top: 42px;
 }
 
+#python {
+  padding-left: 1em;
+}
+
 @media (min-width: 0px) {
 
   .item {
