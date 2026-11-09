@@ -249,7 +249,7 @@ class Content extends React.Component {
         break;
       case "Skills":
         return (
-          <Skills background={this.props.background} imageBackground={this.props.imageBackground} />
+          <Skills background={this.props.background} imageBackground={this.props.imageBackground} imageContrast={this.props.imageContrast} imageText={this.props.imageText} />
         );
         break;
     }
@@ -502,16 +502,16 @@ class Skills extends React.Component {
 
         <h2>Back end</h2>
         <div id="back">
-          <div className={"skills-image"} style={{background: this.props.imageBackground}}>
+          <div className={"skills-image"} style={{background: this.props.imageContrast, color: this.props.imageText}}>
             <figure>
               <img src={"https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/deploy/images/skills/nodejsStackedBlack.svg"} alt={"Node.js logo"} />
                 <figcaption id="node">Node.js</figcaption>
             </figure>
           </div>
 
-          <div className={"skills-image"} style={{background: this.props.imageBackground}}>
+          <div className={"skills-image"} style={{background: this.props.imageContrast, color: this.props.imageText}}>
             <figure>
-              <img src={"https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/deploy/images/skills/python-logo-only.svg"} alt={"Python logo"} />
+              <img id="python" src={"https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/deploy/images/skills/python-logo-only.svg"} alt={"Python logo"} />
                 <figcaption>Python</figcaption>
             </figure>
           </div>
