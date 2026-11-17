@@ -38,6 +38,7 @@ class Portfolio extends React.Component {
       imageText: "black",
       icons: "unset",
       contrast: "none",
+      logoContrast: "bright",
       mobileBar: "gold",
       titleProjects: "red"
     }
@@ -519,9 +520,9 @@ class Skills extends React.Component {
 
         <h2>Tools</h2>
         <div class="skills">
-          <div className={"skills-image"} style={{background: this.props.imageContrast, color: this.props.imageText}}>
+          <div className={"skills-image"} style={{background: this.props.imageBackground}}>
             <figure>
-              <img id="Git" src={"https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/skills/tools/Git/red.svg"} alt={"Git logo"} />
+              <img id="git" src={"https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/skills/tools/Git/red.svg"} alt={"Git logo"} />
                 <figcaption>Git</figcaption>
             </figure>
           </div>

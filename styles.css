@@ -99,6 +99,10 @@ h2 {
   padding-left: 1em;
 }
 
+#git {
+  height: 175px;
+}
+
 @media (min-width: 0px) {
 
   .item {
