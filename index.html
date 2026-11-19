@@ -36,9 +36,9 @@ class Portfolio extends React.Component {
       imageBackground: "white",
       imageContrast: "white",
       imageText: "black",
-      logoColour: "bright",
       icons: "unset",
       contrast: "none",
+      logoColour: "bright",
       logoContrast: "bright",
       mobileBar: "gold",
       titleProjects: "red"
@@ -150,7 +150,8 @@ class Portfolio extends React.Component {
         imageContrast: "white",
         imageText: "black",
         icons: "visible",
-        contrast: "none"
+        contrast: "none",
+        logoColour: "white"
       }));
     }
   }
@@ -164,7 +165,7 @@ class Portfolio extends React.Component {
     <Navbar switch={this.switchDisplay} swap={this.swapColours} button={this.state.button} color={this.state.color} borderHome={this.state.borderHome} borderAbout={this.state.borderAbout} borderExperience={this.state.borderExperience} borderProjects={this.state.borderProjects} borderSkills={this.state.borderSkills} icons={this.state.icons} contrast={this.state.contrast} mobileBar={this.state.mobileBar} />
 
     <main id={"content"}>
-      <Content render={this.state.display} anchor={this.state.anchor} background={this.state.button} titleProjects={this.state.titleProjects} imageBackground={this.state.imageBackground} imageContrast={this.state.imageContrast} imageText={this.state.imageText} />
+      <Content render={this.state.display} anchor={this.state.anchor} background={this.state.button} titleProjects={this.state.titleProjects} imageBackground={this.state.imageBackground} imageContrast={this.state.imageContrast} imageText={this.state.imageText} logo={this.state.logoColour} />
     </main>
 
   </div>
