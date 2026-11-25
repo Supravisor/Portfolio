@@ -165,7 +165,7 @@ class Portfolio extends React.Component {
     <Navbar switch={this.switchDisplay} swap={this.swapColours} button={this.state.button} color={this.state.color} borderHome={this.state.borderHome} borderAbout={this.state.borderAbout} borderExperience={this.state.borderExperience} borderProjects={this.state.borderProjects} borderSkills={this.state.borderSkills} icons={this.state.icons} contrast={this.state.contrast} mobileBar={this.state.mobileBar} />
 
     <main id={"content"}>
-      <Content render={this.state.display} anchor={this.state.anchor} background={this.state.button} titleProjects={this.state.titleProjects} imageBackground={this.state.imageBackground} imageContrast={this.state.imageContrast} imageText={this.state.imageText} logo={this.state.logoColour} />
+      <Content render={this.state.display} anchor={this.state.anchor} background={this.state.button} titleProjects={this.state.titleProjects} imageBackground={this.state.imageBackground} imageContrast={this.state.imageContrast} imageText={this.state.imageText} logoColour={this.state.logoColour} />
     </main>
 
   </div>
@@ -526,7 +526,7 @@ class Skills extends React.Component {
         <div class="skills">
           <div className={"skills-image"} style={{background: this.props.imageBackground}}>
             <figure>
-              <img id="git" src={`https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/skills/tools/Git/${props.logo}.svg`} alt={"Git logo"} />
+              <img id="git" src={`https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/skills/tools/Git/${this.props.logoColour}.svg`} alt={"Git logo"} />
                 <figcaption>Git</figcaption>
             </figure>
           </div>
