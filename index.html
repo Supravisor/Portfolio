@@ -165,7 +165,7 @@ class Portfolio extends React.Component {
     <Navbar switch={this.switchDisplay} swap={this.swapColours} button={this.state.button} color={this.state.color} borderHome={this.state.borderHome} borderAbout={this.state.borderAbout} borderExperience={this.state.borderExperience} borderProjects={this.state.borderProjects} borderSkills={this.state.borderSkills} icons={this.state.icons} contrast={this.state.contrast} mobileBar={this.state.mobileBar} />
 
     <main id={"content"}>
-      <Content render={this.state.display} anchor={this.state.anchor} background={this.state.button} titleProjects={this.state.titleProjects} imageBackground={this.state.imageBackground} imageContrast={this.state.imageContrast} imageText={this.state.imageText} logo={this.state.logoColour} />
+      <Content render={this.state.display} anchor={this.state.anchor} background={this.state.button} titleProjects={this.state.titleProjects} imageBackground={this.state.imageBackground} imageContrast={this.state.imageContrast} imageText={this.state.imageText} logoColour={this.state.logoColour} />
     </main>
 
   </div>
@@ -254,7 +254,7 @@ class Content extends React.Component {
         break;
       case "Skills":
         return (
-          <Skills background={this.props.background} imageBackground={this.props.imageBackground} imageContrast={this.props.imageContrast} imageText={this.props.imageText} logo={this.props.logoColour} />
+          <Skills background={this.props.background} imageBackground={this.props.imageBackground} imageContrast={this.props.imageContrast} imageText={this.props.imageText} logoColour={this.props.logoColour} />
         );
         break;
     }
@@ -332,8 +332,8 @@ class About extends React.Component {
 
           </ul>
 
-        <p class="indent">Listed first among the 45 <a href="https://www.freecodecamp.org/news/freecodecamp-top-open-source-contributors-2025/#heading-forum-top-contributors" target="_blank" style={{color: this.props.anchor}}>most prolific forum contributors in 2025</a> for freeCodeCamp.</p>
-        <p class="indent">Listed second among the 82 <a href="https://www.freecodecamp.org/news/freecodecamps-top-open-source-contributors-of-2024/#heading-forum-top-contributors" target="_blank" style={{color: this.props.anchor}}>most prolific forum contributors in 2024</a> for freeCodeCamp.</p>
+        <p className={"indent"}>Listed first among the 45 <a href="https://www.freecodecamp.org/news/freecodecamp-top-open-source-contributors-2025/#heading-forum-top-contributors" target="_blank" style={{color: this.props.anchor}}>most prolific forum contributors in 2025</a> for freeCodeCamp.</p>
+        <p className={"indent"}>Listed second among the 82 <a href="https://www.freecodecamp.org/news/freecodecamps-top-open-source-contributors-of-2024/#heading-forum-top-contributors" target="_blank" style={{color: this.props.anchor}}>most prolific forum contributors in 2024</a> for freeCodeCamp.</p>
 
       </div>
     );
@@ -358,8 +358,8 @@ class Experience extends React.Component {
             <li>share views in discussions</li>
           </ul>
 
-        <p class="indent">Listed second among the 59 <a href="https://www.freecodecamp.org/news/freecodecamp-top-open-source-contributors-2025/#heading-github-top-contributors" target="_blank" style={{color: this.props.anchor}}>most prolific GitHub open source contributors in 2025</a> for freeCodeCamp.</p>
-        <p class="indent">Listed third among the 92 <a href="https://www.freecodecamp.org/news/freecodecamps-top-open-source-contributors-of-2024/#heading-github-top-contributors" target="_blank" style={{color: this.props.anchor}}>most prolific GitHub open source contributors in 2024</a> for freeCodeCamp.</p>
+        <p className={"indent"}>Listed second among the 59 <a href="https://www.freecodecamp.org/news/freecodecamp-top-open-source-contributors-2025/#heading-github-top-contributors" target="_blank" style={{color: this.props.anchor}}>most prolific GitHub open source contributors in 2025</a> for freeCodeCamp.</p>
+        <p className={"indent"}>Listed third among the 92 <a href="https://www.freecodecamp.org/news/freecodecamps-top-open-source-contributors-of-2024/#heading-github-top-contributors" target="_blank" style={{color: this.props.anchor}}>most prolific GitHub open source contributors in 2024</a> for freeCodeCamp.</p>
         
         <p>Built web applications to monitor the status of network printers at several organisations.</p>
       </div>
@@ -526,7 +526,7 @@ class Skills extends React.Component {
         <div class="skills">
           <div className={"skills-image"} style={{background: this.props.imageBackground}}>
             <figure>
-              <img id="git" src={`https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/skills/tools/Git/{logo}.svg`} alt={"Git logo"} />
+              <img id="git" src={`https://raw.githubusercontent.com/Supravisor/Portfolio/refs/heads/main/images/skills/tools/Git/${this.props.logoColour}.svg`} alt={"Git logo"} />
                 <figcaption>Git</figcaption>
             </figure>
           </div>
